@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Working public-review candidate; cite the actual public commit after publication. No DOI assigned."
+title: "Continuation and representation: general notes, controlled diagnostic and finite prime experiments"
+type: software
+version: "0.1.0-review"
+authors:
+  - family-names: Couret
+    given-names: Alexandre
+    affiliation: "Independent researcher, France"
+    orcid: "https://orcid.org/0009-0000-8246-7146"

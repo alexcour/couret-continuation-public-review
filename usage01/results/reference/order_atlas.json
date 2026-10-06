@@ -1,0 +1,643 @@
+[
+  {
+    "state": 0,
+    "prefix": [],
+    "actions": [
+      "APPROVE",
+      "EDIT"
+    ],
+    "left_state": 0,
+    "right_state": 1,
+    "same_current_view": true,
+    "continuation_relevant": true,
+    "regime": "invisible_relevant",
+    "case_id": "order-0-APPROVE-EDIT",
+    "continuation": [
+      "COMMIT"
+    ]
+  },
+  {
+    "state": 0,
+    "prefix": [],
+    "actions": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "left_state": 3,
+    "right_state": 3,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 0,
+    "prefix": [],
+    "actions": [
+      "APPROVE",
+      "REARM"
+    ],
+    "left_state": 1,
+    "right_state": 1,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 0,
+    "prefix": [],
+    "actions": [
+      "APPROVE",
+      "COMMIT"
+    ],
+    "left_state": 0,
+    "right_state": 1,
+    "same_current_view": true,
+    "continuation_relevant": true,
+    "regime": "invisible_relevant",
+    "case_id": "order-0-APPROVE-COMMIT",
+    "continuation": [
+      "COMMIT"
+    ]
+  },
+  {
+    "state": 0,
+    "prefix": [],
+    "actions": [
+      "EDIT",
+      "FAULT"
+    ],
+    "left_state": 2,
+    "right_state": 2,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 0,
+    "prefix": [],
+    "actions": [
+      "EDIT",
+      "REARM"
+    ],
+    "left_state": 0,
+    "right_state": 0,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 0,
+    "prefix": [],
+    "actions": [
+      "EDIT",
+      "COMMIT"
+    ],
+    "left_state": 0,
+    "right_state": 0,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 0,
+    "prefix": [],
+    "actions": [
+      "FAULT",
+      "REARM"
+    ],
+    "left_state": 0,
+    "right_state": 2,
+    "same_current_view": false,
+    "continuation_relevant": true,
+    "regime": "visible_relevant",
+    "case_id": "order-0-FAULT-REARM",
+    "continuation": [
+      "APPROVE"
+    ]
+  },
+  {
+    "state": 0,
+    "prefix": [],
+    "actions": [
+      "FAULT",
+      "COMMIT"
+    ],
+    "left_state": 2,
+    "right_state": 2,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 0,
+    "prefix": [],
+    "actions": [
+      "REARM",
+      "COMMIT"
+    ],
+    "left_state": 0,
+    "right_state": 0,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 1,
+    "prefix": [
+      "APPROVE"
+    ],
+    "actions": [
+      "APPROVE",
+      "EDIT"
+    ],
+    "left_state": 0,
+    "right_state": 1,
+    "same_current_view": true,
+    "continuation_relevant": true,
+    "regime": "invisible_relevant",
+    "case_id": "order-1-APPROVE-EDIT",
+    "continuation": [
+      "COMMIT"
+    ]
+  },
+  {
+    "state": 1,
+    "prefix": [
+      "APPROVE"
+    ],
+    "actions": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "left_state": 3,
+    "right_state": 3,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 1,
+    "prefix": [
+      "APPROVE"
+    ],
+    "actions": [
+      "APPROVE",
+      "REARM"
+    ],
+    "left_state": 1,
+    "right_state": 1,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 1,
+    "prefix": [
+      "APPROVE"
+    ],
+    "actions": [
+      "APPROVE",
+      "COMMIT"
+    ],
+    "left_state": 0,
+    "right_state": 1,
+    "same_current_view": true,
+    "continuation_relevant": true,
+    "regime": "invisible_relevant",
+    "case_id": "order-1-APPROVE-COMMIT",
+    "continuation": [
+      "COMMIT"
+    ]
+  },
+  {
+    "state": 1,
+    "prefix": [
+      "APPROVE"
+    ],
+    "actions": [
+      "EDIT",
+      "FAULT"
+    ],
+    "left_state": 2,
+    "right_state": 2,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 1,
+    "prefix": [
+      "APPROVE"
+    ],
+    "actions": [
+      "EDIT",
+      "REARM"
+    ],
+    "left_state": 0,
+    "right_state": 0,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 1,
+    "prefix": [
+      "APPROVE"
+    ],
+    "actions": [
+      "EDIT",
+      "COMMIT"
+    ],
+    "left_state": 0,
+    "right_state": 0,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 1,
+    "prefix": [
+      "APPROVE"
+    ],
+    "actions": [
+      "FAULT",
+      "REARM"
+    ],
+    "left_state": 1,
+    "right_state": 3,
+    "same_current_view": false,
+    "continuation_relevant": true,
+    "regime": "visible_relevant",
+    "case_id": "order-1-FAULT-REARM",
+    "continuation": [
+      "APPROVE"
+    ]
+  },
+  {
+    "state": 1,
+    "prefix": [
+      "APPROVE"
+    ],
+    "actions": [
+      "FAULT",
+      "COMMIT"
+    ],
+    "left_state": 3,
+    "right_state": 2,
+    "same_current_view": true,
+    "continuation_relevant": true,
+    "regime": "invisible_relevant",
+    "case_id": "order-1-FAULT-COMMIT",
+    "continuation": [
+      "REARM",
+      "COMMIT"
+    ]
+  },
+  {
+    "state": 1,
+    "prefix": [
+      "APPROVE"
+    ],
+    "actions": [
+      "REARM",
+      "COMMIT"
+    ],
+    "left_state": 0,
+    "right_state": 0,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 2,
+    "prefix": [
+      "FAULT"
+    ],
+    "actions": [
+      "APPROVE",
+      "EDIT"
+    ],
+    "left_state": 2,
+    "right_state": 3,
+    "same_current_view": true,
+    "continuation_relevant": true,
+    "regime": "invisible_relevant",
+    "case_id": "order-2-APPROVE-EDIT",
+    "continuation": [
+      "REARM",
+      "COMMIT"
+    ]
+  },
+  {
+    "state": 2,
+    "prefix": [
+      "FAULT"
+    ],
+    "actions": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "left_state": 3,
+    "right_state": 3,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 2,
+    "prefix": [
+      "FAULT"
+    ],
+    "actions": [
+      "APPROVE",
+      "REARM"
+    ],
+    "left_state": 1,
+    "right_state": 1,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 2,
+    "prefix": [
+      "FAULT"
+    ],
+    "actions": [
+      "APPROVE",
+      "COMMIT"
+    ],
+    "left_state": 3,
+    "right_state": 3,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 2,
+    "prefix": [
+      "FAULT"
+    ],
+    "actions": [
+      "EDIT",
+      "FAULT"
+    ],
+    "left_state": 2,
+    "right_state": 2,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 2,
+    "prefix": [
+      "FAULT"
+    ],
+    "actions": [
+      "EDIT",
+      "REARM"
+    ],
+    "left_state": 0,
+    "right_state": 0,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 2,
+    "prefix": [
+      "FAULT"
+    ],
+    "actions": [
+      "EDIT",
+      "COMMIT"
+    ],
+    "left_state": 2,
+    "right_state": 2,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 2,
+    "prefix": [
+      "FAULT"
+    ],
+    "actions": [
+      "FAULT",
+      "REARM"
+    ],
+    "left_state": 0,
+    "right_state": 2,
+    "same_current_view": false,
+    "continuation_relevant": true,
+    "regime": "visible_relevant",
+    "case_id": "order-2-FAULT-REARM",
+    "continuation": [
+      "APPROVE"
+    ]
+  },
+  {
+    "state": 2,
+    "prefix": [
+      "FAULT"
+    ],
+    "actions": [
+      "FAULT",
+      "COMMIT"
+    ],
+    "left_state": 2,
+    "right_state": 2,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 2,
+    "prefix": [
+      "FAULT"
+    ],
+    "actions": [
+      "REARM",
+      "COMMIT"
+    ],
+    "left_state": 0,
+    "right_state": 0,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 3,
+    "prefix": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "actions": [
+      "APPROVE",
+      "EDIT"
+    ],
+    "left_state": 2,
+    "right_state": 3,
+    "same_current_view": true,
+    "continuation_relevant": true,
+    "regime": "invisible_relevant",
+    "case_id": "order-3-APPROVE-EDIT",
+    "continuation": [
+      "REARM",
+      "COMMIT"
+    ]
+  },
+  {
+    "state": 3,
+    "prefix": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "actions": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "left_state": 3,
+    "right_state": 3,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 3,
+    "prefix": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "actions": [
+      "APPROVE",
+      "REARM"
+    ],
+    "left_state": 1,
+    "right_state": 1,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 3,
+    "prefix": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "actions": [
+      "APPROVE",
+      "COMMIT"
+    ],
+    "left_state": 3,
+    "right_state": 3,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 3,
+    "prefix": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "actions": [
+      "EDIT",
+      "FAULT"
+    ],
+    "left_state": 2,
+    "right_state": 2,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 3,
+    "prefix": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "actions": [
+      "EDIT",
+      "REARM"
+    ],
+    "left_state": 0,
+    "right_state": 0,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 3,
+    "prefix": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "actions": [
+      "EDIT",
+      "COMMIT"
+    ],
+    "left_state": 2,
+    "right_state": 2,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 3,
+    "prefix": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "actions": [
+      "FAULT",
+      "REARM"
+    ],
+    "left_state": 1,
+    "right_state": 3,
+    "same_current_view": false,
+    "continuation_relevant": true,
+    "regime": "visible_relevant",
+    "case_id": "order-3-FAULT-REARM",
+    "continuation": [
+      "APPROVE"
+    ]
+  },
+  {
+    "state": 3,
+    "prefix": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "actions": [
+      "FAULT",
+      "COMMIT"
+    ],
+    "left_state": 3,
+    "right_state": 3,
+    "same_current_view": true,
+    "continuation_relevant": false,
+    "regime": "invisible_redundant"
+  },
+  {
+    "state": 3,
+    "prefix": [
+      "APPROVE",
+      "FAULT"
+    ],
+    "actions": [
+      "REARM",
+      "COMMIT"
+    ],
+    "left_state": 0,
+    "right_state": 1,
+    "same_current_view": true,
+    "continuation_relevant": true,
+    "regime": "invisible_relevant",
+    "case_id": "order-3-REARM-COMMIT",
+    "continuation": [
+      "COMMIT"
+    ]
+  }
+]

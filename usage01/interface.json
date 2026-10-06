@@ -1,0 +1,12 @@
+{
+  "base_url": "http://127.0.0.1:8765",
+  "target_name": "Declared test target",
+  "actions": ["APPROVE", "EDIT", "FAULT", "REARM", "COMMIT"],
+  "prepare_path": "/prepare",
+  "step_path": "/step",
+  "release_path": "/release",
+  "max_states": 4,
+  "discovery_depth": 1,
+  "bound_source": "Two independently specified boolean memory fields in this controlled test policy",
+  "timeout_seconds": 10
+}

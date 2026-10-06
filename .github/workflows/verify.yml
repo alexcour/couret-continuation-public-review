@@ -1,0 +1,35 @@
+name: verify
+on:
+  push:
+  pull_request:
+jobs:
+  controlled-diagnostic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check manifest
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Verify frozen diagnostic results
+        run: python3 usage01/verify_results.py
+      - name: Test refusal and regression behavior
+        run: python3 -m unittest discover -s usage01/tests -v
+      - name: Reproduce controlled HTTP run in a fresh copy
+        run: |
+          cp -R usage01 /tmp/cont-usage-replay
+          cd /tmp/cont-usage-replay
+          python3 run_demo.py
+          python3 verify_results.py
+  prime-model:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install model dependency
+        run: python3 -m pip install numpy==2.3.5
+      - name: Replay finite semi analytic model
+        run: python3 scripts/replay_prime_v011.py --output /tmp/cont-prime-v011

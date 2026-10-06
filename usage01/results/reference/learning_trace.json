@@ -1,0 +1,53 @@
+[
+  {
+    "kind": "equivalence",
+    "round": 0,
+    "hypothesis_states": 1,
+    "counterexample": [
+      "APPROVE",
+      "COMMIT"
+    ]
+  },
+  {
+    "kind": "consistency",
+    "suffix": [
+      "COMMIT"
+    ],
+    "S_size": 3,
+    "E_size": 2
+  },
+  {
+    "kind": "closure",
+    "word": [
+      "FAULT"
+    ],
+    "S_size": 4,
+    "E_size": 2
+  },
+  {
+    "kind": "equivalence",
+    "round": 1,
+    "hypothesis_states": 3,
+    "counterexample": [
+      "APPROVE",
+      "FAULT",
+      "REARM",
+      "COMMIT"
+    ]
+  },
+  {
+    "kind": "consistency",
+    "suffix": [
+      "REARM",
+      "COMMIT"
+    ],
+    "S_size": 7,
+    "E_size": 3
+  },
+  {
+    "kind": "equivalence",
+    "round": 2,
+    "hypothesis_states": 4,
+    "counterexample": null
+  }
+]

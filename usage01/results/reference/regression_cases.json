@@ -1,0 +1,1059 @@
+[
+  {
+    "id": "projection-0-1-0",
+    "kind": "current_view_collision",
+    "continuation": [
+      "COMMIT"
+    ],
+    "same_current_view": true,
+    "left": {
+      "history": [],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "APPROVE"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1,
+    "model_states": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "projection-2-3-1",
+    "kind": "current_view_collision",
+    "continuation": [
+      "REARM",
+      "COMMIT"
+    ],
+    "same_current_view": true,
+    "left": {
+      "history": [
+        "FAULT"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "APPROVE",
+        "FAULT"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1,
+    "model_states": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "order-0-APPROVE-EDIT",
+    "kind": "intervention_order",
+    "continuation": [
+      "COMMIT"
+    ],
+    "same_current_view": true,
+    "left": {
+      "history": [
+        "APPROVE",
+        "EDIT"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "EDIT",
+        "APPROVE"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-0-APPROVE-COMMIT",
+    "kind": "intervention_order",
+    "continuation": [
+      "COMMIT"
+    ],
+    "same_current_view": true,
+    "left": {
+      "history": [
+        "APPROVE",
+        "COMMIT"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "COMMIT",
+        "APPROVE"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-0-FAULT-REARM",
+    "kind": "intervention_order",
+    "continuation": [
+      "APPROVE"
+    ],
+    "same_current_view": false,
+    "left": {
+      "history": [
+        "FAULT",
+        "REARM"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "REARM",
+        "FAULT"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-1-APPROVE-EDIT",
+    "kind": "intervention_order",
+    "continuation": [
+      "COMMIT"
+    ],
+    "same_current_view": true,
+    "left": {
+      "history": [
+        "APPROVE",
+        "APPROVE",
+        "EDIT"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "APPROVE",
+        "EDIT",
+        "APPROVE"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-1-APPROVE-COMMIT",
+    "kind": "intervention_order",
+    "continuation": [
+      "COMMIT"
+    ],
+    "same_current_view": true,
+    "left": {
+      "history": [
+        "APPROVE",
+        "APPROVE",
+        "COMMIT"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "APPROVE",
+        "COMMIT",
+        "APPROVE"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-1-FAULT-REARM",
+    "kind": "intervention_order",
+    "continuation": [
+      "APPROVE"
+    ],
+    "same_current_view": false,
+    "left": {
+      "history": [
+        "APPROVE",
+        "FAULT",
+        "REARM"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "APPROVE",
+        "REARM",
+        "FAULT"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-1-FAULT-COMMIT",
+    "kind": "intervention_order",
+    "continuation": [
+      "REARM",
+      "COMMIT"
+    ],
+    "same_current_view": true,
+    "left": {
+      "history": [
+        "APPROVE",
+        "FAULT",
+        "COMMIT"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "BLOCKED_LOCK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "APPROVE",
+        "COMMIT",
+        "FAULT"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-2-APPROVE-EDIT",
+    "kind": "intervention_order",
+    "continuation": [
+      "REARM",
+      "COMMIT"
+    ],
+    "same_current_view": true,
+    "left": {
+      "history": [
+        "FAULT",
+        "APPROVE",
+        "EDIT"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "FAULT",
+        "EDIT",
+        "APPROVE"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-2-FAULT-REARM",
+    "kind": "intervention_order",
+    "continuation": [
+      "APPROVE"
+    ],
+    "same_current_view": false,
+    "left": {
+      "history": [
+        "FAULT",
+        "FAULT",
+        "REARM"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "FAULT",
+        "REARM",
+        "FAULT"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-3-APPROVE-EDIT",
+    "kind": "intervention_order",
+    "continuation": [
+      "REARM",
+      "COMMIT"
+    ],
+    "same_current_view": true,
+    "left": {
+      "history": [
+        "APPROVE",
+        "FAULT",
+        "APPROVE",
+        "EDIT"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "APPROVE",
+        "FAULT",
+        "EDIT",
+        "APPROVE"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-3-FAULT-REARM",
+    "kind": "intervention_order",
+    "continuation": [
+      "APPROVE"
+    ],
+    "same_current_view": false,
+    "left": {
+      "history": [
+        "APPROVE",
+        "FAULT",
+        "FAULT",
+        "REARM"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "APPROVE",
+        "FAULT",
+        "REARM",
+        "FAULT"
+      ],
+      "view": "LOCKED",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  },
+  {
+    "id": "order-3-REARM-COMMIT",
+    "kind": "intervention_order",
+    "continuation": [
+      "COMMIT"
+    ],
+    "same_current_view": true,
+    "left": {
+      "history": [
+        "APPROVE",
+        "FAULT",
+        "REARM",
+        "COMMIT"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        },
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        }
+      ]
+    },
+    "right": {
+      "history": [
+        "APPROVE",
+        "FAULT",
+        "COMMIT",
+        "REARM"
+      ],
+      "view": "READY",
+      "expected_trace": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "BLOCKED_LOCK",
+          "view": "LOCKED"
+        },
+        {
+          "decision": "ACK",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "expected_tail": [
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ]
+    },
+    "discrete_continuation_distance_on_this_witness": 1
+  }
+]

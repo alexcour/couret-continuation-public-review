@@ -1,0 +1,58 @@
+{
+  "window": [
+    50000000,
+    100000000
+  ],
+  "n_primes": 2760321,
+  "n_triples": 2760319,
+  "chains": {
+    "primorial_new_primes": [
+      30,
+      210,
+      2310,
+      30030
+    ],
+    "2_adic_refinement": [
+      30,
+      60,
+      120,
+      240,
+      480,
+      960,
+      1920,
+      3840,
+      7680,
+      15360,
+      30720
+    ],
+    "3_adic_refinement": [
+      30,
+      90,
+      270,
+      810,
+      2430,
+      7290,
+      21870
+    ],
+    "5_adic_refinement": [
+      30,
+      150,
+      750,
+      3750,
+      18750
+    ],
+    "mixed_refinement": [
+      30,
+      60,
+      180,
+      360,
+      2520,
+      27720
+    ]
+  },
+  "notes": [
+    "Backoff tau selected on validation and frozen on test.",
+    "95% intervals are descriptive normal intervals across held-out 50k-event test blocks, not formal arithmetic p-values.",
+    "Multiple nested chains separate nominal state richness from which arithmetic information is added."
+  ]
+}

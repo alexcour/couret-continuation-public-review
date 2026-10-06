@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "reachable_states": 4,
+  "model_transitions_checked": 20,
+  "minimal_state_pairs_checked": 6,
+  "order_pairs_checked": 40,
+  "witness_cases_checked": 14,
+  "reference_http_journal": {
+    "preparations": 326,
+    "event_calls": 1138
+  },
+  "mutant_http_journal": {
+    "preparations": 28,
+    "event_calls": 112
+  },
+  "mutant_failed_cases": [
+    "order-0-APPROVE-EDIT",
+    "order-1-APPROVE-EDIT",
+    "order-2-APPROVE-EDIT",
+    "order-3-APPROVE-EDIT"
+  ],
+  "scope": "Independent finite controlled-fixture rules; not an oracle available to learning"
+}

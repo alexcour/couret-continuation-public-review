@@ -1,0 +1,1 @@
+Original text and generated research data: copyright 2026 Alexandre Couret. Licensed under CC BY 4.0. Attribute the author, version and source, link https://creativecommons.org/licenses/by/4.0/ and indicate changes. Third-party contributions retain their own rights.

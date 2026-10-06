@@ -1,0 +1,23 @@
+{
+  "name": "CONT-P",
+  "version": "0.4",
+  "date": "2026-10-05",
+  "prime_bound": 100000000,
+  "q_values": [
+    30,
+    210,
+    2310,
+    30030
+  ],
+  "experiments": [
+    "matched Markov null on three windows",
+    "five fixed-width q=30030 windows",
+    "held-out history depth 0..4"
+  ],
+  "status": "exploratory finite computation",
+  "key_findings": [
+    "q=30030 rebound is strongly sample-size dependent",
+    "mod30 benefits from history depth 1 and 2",
+    "q>=210 does not benefit from added mod30 past in held-out tabular model"
+  ]
+}

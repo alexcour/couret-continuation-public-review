@@ -1,0 +1,14 @@
+Robert J. Lemke Oliver and Kannan Soundararajan, Unexpected biases in the distribution of consecutive primes, PNAS 113 (2016), DOI 10.1073/pnas.1605366113.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4978288/
+
+Robert J. Lemke Oliver and Kannan Soundararajan, The distribution of consecutive prime biases and sums of sawtooth random variables, Math. Proc. Camb. Phil. Soc. 168 (2020), published online 2018.
+https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society/article/abs/distribution-of-consecutive-prime-biases-and-sums-of-sawtooth-random-variables/FA3F48FF1FE536CC66A24733619BE204
+
+Daniel John Murray, Prime-Residue Projection Tomography of Consecutive-Prime Biases: Primorial Recovery and Gap-Word Order Asymmetry, SSRN 6947578 (2026).
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6947578
+
+Daniel John Murray, Recursive Predictive Closure in the Prime Sieve: Resolution Covariance, Finite Probability Consistency, and Gap-word Prediction, SSRN 7426882 (2026).
+https://papers.ssrn.com/sol3/Delivery.cfm/7426882.pdf?abstractid=7426882&mirid=1
+
+Terence Tao, The prime tuples conjecture, sieve theory, and the work of Goldston-Pintz-Yildirim, Motohashi-Pintz, and Zhang (2013), for the standard singular-series local factor notation.
+https://terrytao.wordpress.com/2013/06/03/the-prime-tuples-conjecture-sieve-theory-and-the-work-of-goldston-pintz-yildirim-motohashi-pintz-and-zhang/

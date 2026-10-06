@@ -1,0 +1,4 @@
+model,fraction_attributed_to_7,note
+Empirical q=180 -> q=210,0.8089319781827514,held-out backoff gain; phi(180)=phi(210)=48
+Pair local-factor quadratic proxy,0.4716111319045083,normalized squared log pair Euler contrast over primes >=7
+Triplet local-factor variance proxy,0.6717835509752857,"variance of log triplet Euler factor under uniform two-gap residues, normalized over primes >=7"

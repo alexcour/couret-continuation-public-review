@@ -1,0 +1,902 @@
+[
+  {
+    "case_id": "projection-0-1-0",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "projection-2-3-1",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-0-APPROVE-EDIT",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-0-APPROVE-COMMIT",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-0-FAULT-REARM",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-1-APPROVE-EDIT",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-1-APPROVE-COMMIT",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-1-FAULT-REARM",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-1-FAULT-COMMIT",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "BLOCKED_LOCK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-2-APPROVE-EDIT",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-2-FAULT-REARM",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-3-APPROVE-EDIT",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-3-FAULT-REARM",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "order-3-REARM-COMMIT",
+    "passed": true,
+    "branches": [
+      {
+        "side": "left",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      {
+        "side": "right",
+        "passed": true,
+        "actual_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "BLOCKED_LOCK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "actual_tail": [
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      }
+    ]
+  }
+]

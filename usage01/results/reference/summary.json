@@ -1,0 +1,411 @@
+{
+  "name": "CONT-USAGE-01",
+  "version": "1.0",
+  "status": "CERTIFIED_CONDITIONALLY",
+  "target": "Controlled approval workflow over HTTP",
+  "controlled_fixture": true,
+  "execution_boundary": "HTTP; target implementation is not imported by learner or diagnostic engine",
+  "observed_states": 4,
+  "declared_max_states": 4,
+  "bound_source": "Test policy has exactly two mutable boolean fields (lock, approval); session identifiers do not affect observations.",
+  "current_view_values": [
+    "LOCKED",
+    "READY"
+  ],
+  "state_views": [
+    "READY",
+    "READY",
+    "LOCKED",
+    "LOCKED"
+  ],
+  "state_view_sets": [
+    [
+      "READY"
+    ],
+    [
+      "READY"
+    ],
+    [
+      "LOCKED"
+    ],
+    [
+      "LOCKED"
+    ]
+  ],
+  "initial_view_collisions": [
+    {
+      "id": "projection-0-1-0",
+      "kind": "current_view_collision",
+      "continuation": [
+        "COMMIT"
+      ],
+      "same_current_view": true,
+      "left": {
+        "history": [],
+        "view": "READY",
+        "expected_trace": [
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "expected_tail": [
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      "right": {
+        "history": [
+          "APPROVE"
+        ],
+        "view": "READY",
+        "expected_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "expected_tail": [
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      },
+      "discrete_continuation_distance_on_this_witness": 1,
+      "model_states": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "projection-2-3-1",
+      "kind": "current_view_collision",
+      "continuation": [
+        "REARM",
+        "COMMIT"
+      ],
+      "same_current_view": true,
+      "left": {
+        "history": [
+          "FAULT"
+        ],
+        "view": "LOCKED",
+        "expected_trace": [
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ],
+        "expected_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "BLOCKED_REVIEW",
+            "view": "READY"
+          }
+        ]
+      },
+      "right": {
+        "history": [
+          "APPROVE",
+          "FAULT"
+        ],
+        "view": "LOCKED",
+        "expected_trace": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "ACK",
+            "view": "LOCKED"
+          },
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ],
+        "expected_tail": [
+          {
+            "decision": "ACK",
+            "view": "READY"
+          },
+          {
+            "decision": "COMMITTED",
+            "view": "READY"
+          }
+        ]
+      },
+      "discrete_continuation_distance_on_this_witness": 1,
+      "model_states": [
+        2,
+        3
+      ]
+    }
+  ],
+  "current_view_baseline": [
+    {
+      "view": "LOCKED",
+      "action": "APPROVE",
+      "possible_outputs": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ],
+      "ambiguous_output": false,
+      "possible_next_views": [
+        "LOCKED"
+      ],
+      "possible_next_continuation_states": [
+        3
+      ]
+    },
+    {
+      "view": "LOCKED",
+      "action": "EDIT",
+      "possible_outputs": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ],
+      "ambiguous_output": false,
+      "possible_next_views": [
+        "LOCKED"
+      ],
+      "possible_next_continuation_states": [
+        2
+      ]
+    },
+    {
+      "view": "LOCKED",
+      "action": "FAULT",
+      "possible_outputs": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ],
+      "ambiguous_output": false,
+      "possible_next_views": [
+        "LOCKED"
+      ],
+      "possible_next_continuation_states": [
+        2,
+        3
+      ]
+    },
+    {
+      "view": "LOCKED",
+      "action": "REARM",
+      "possible_outputs": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ],
+      "ambiguous_output": false,
+      "possible_next_views": [
+        "READY"
+      ],
+      "possible_next_continuation_states": [
+        0,
+        1
+      ]
+    },
+    {
+      "view": "LOCKED",
+      "action": "COMMIT",
+      "possible_outputs": [
+        {
+          "decision": "BLOCKED_LOCK",
+          "view": "LOCKED"
+        }
+      ],
+      "ambiguous_output": false,
+      "possible_next_views": [
+        "LOCKED"
+      ],
+      "possible_next_continuation_states": [
+        2,
+        3
+      ]
+    },
+    {
+      "view": "READY",
+      "action": "APPROVE",
+      "possible_outputs": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ],
+      "ambiguous_output": false,
+      "possible_next_views": [
+        "READY"
+      ],
+      "possible_next_continuation_states": [
+        1
+      ]
+    },
+    {
+      "view": "READY",
+      "action": "EDIT",
+      "possible_outputs": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ],
+      "ambiguous_output": false,
+      "possible_next_views": [
+        "READY"
+      ],
+      "possible_next_continuation_states": [
+        0
+      ]
+    },
+    {
+      "view": "READY",
+      "action": "FAULT",
+      "possible_outputs": [
+        {
+          "decision": "ACK",
+          "view": "LOCKED"
+        }
+      ],
+      "ambiguous_output": false,
+      "possible_next_views": [
+        "LOCKED"
+      ],
+      "possible_next_continuation_states": [
+        2,
+        3
+      ]
+    },
+    {
+      "view": "READY",
+      "action": "REARM",
+      "possible_outputs": [
+        {
+          "decision": "ACK",
+          "view": "READY"
+        }
+      ],
+      "ambiguous_output": false,
+      "possible_next_views": [
+        "READY"
+      ],
+      "possible_next_continuation_states": [
+        0,
+        1
+      ]
+    },
+    {
+      "view": "READY",
+      "action": "COMMIT",
+      "possible_outputs": [
+        {
+          "decision": "BLOCKED_REVIEW",
+          "view": "READY"
+        },
+        {
+          "decision": "COMMITTED",
+          "view": "READY"
+        }
+      ],
+      "ambiguous_output": true,
+      "possible_next_views": [
+        "READY"
+      ],
+      "possible_next_continuation_states": [
+        0
+      ]
+    }
+  ],
+  "order_regimes": {
+    "invisible_relevant": 8,
+    "invisible_redundant": 28,
+    "visible_relevant": 4
+  },
+  "order_pairs": 40,
+  "witness_cases": 14,
+  "replay_cases_passed": 14,
+  "final_fresh_conformance_words": 72,
+  "final_fresh_conformance_events": 216,
+  "counts": {
+    "query_requests": 1508,
+    "cache_hits": 1182,
+    "preparations": 326,
+    "event_calls": 1138,
+    "failed_requests": 0,
+    "release_calls": 326,
+    "successful_http_calls": 1790
+  },
+  "counts_by_stage": {
+    "learning": {
+      "query_requests": 1247,
+      "cache_hits": 1073,
+      "preparations": 174,
+      "event_calls": 616,
+      "failed_requests": 0,
+      "release_calls": 174
+    },
+    "fresh_conformance": {
+      "query_requests": 72,
+      "cache_hits": 0,
+      "preparations": 72,
+      "event_calls": 216,
+      "failed_requests": 0,
+      "release_calls": 72
+    },
+    "diagnostics": {
+      "query_requests": 161,
+      "cache_hits": 109,
+      "preparations": 52,
+      "event_calls": 194,
+      "failed_requests": 0,
+      "release_calls": 52
+    },
+    "replay": {
+      "query_requests": 28,
+      "cache_hits": 0,
+      "preparations": 28,
+      "event_calls": 112,
+      "failed_requests": 0,
+      "release_calls": 28
+    }
+  },
+  "seconds": 0.672,
+  "python": "3.12.14",
+  "assumptions": [
+    "Deterministic, stationary, complete Mealy target on the declared action alphabet.",
+    "Reliable independent preparation into the same initial continuation state.",
+    "The stated independent state bound is correct; the engine does not infer this bound from its candidate.",
+    "Only decision and view belong to the tested observation projection; time and session identifiers are excluded.",
+    "No claim of production deployment or comparative novelty against existing learning tools."
+  ],
+  "algorithm_provenance": "CONT-04E observation-table learner and classical W-style conformance; new HTTP adapter, projection diagnostic, replay and report."
+}

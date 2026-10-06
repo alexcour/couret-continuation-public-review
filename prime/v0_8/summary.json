@@ -1,0 +1,11 @@
+{
+  "factor7_exact_phi_match": {
+    "phi": 48,
+    "q180_gain_large_window": 0.0014300013489627,
+    "q210_gain_large_window": 0.0002732275289423
+  },
+  "window_factor7_suppression_fraction_mean": 0.8885159500855968,
+  "window_factor7_suppression_fraction_min": 0.8390887206289277,
+  "window_factor7_suppression_fraction_max": 1.0322541045210598,
+  "status": "exploratory finite computation; theoretical comparison is qualitative, not an LOS-derived prediction of CMI"
+}

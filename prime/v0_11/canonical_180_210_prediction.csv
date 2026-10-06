@@ -1,0 +1,2 @@
+model,xmid,logx,hmax,pmax,G180_model_raw,G210_model_raw,suppression_model,G180_observed,G210_observed,suppression_observed,scaled_G210_prediction,scaled_drop_prediction,fraction_observed_drop_explained,scale_to_G180,epistemic_status
+LOS-Poissonized conditional singular-series triplet model,75000000,18.132998671500584,180,199,0.0017570695240133253,0.0004648321794142496,0.7354503205129154,0.00143000135,0.000273227529,0.8089319782809995,0.0003783063988085984,0.0010516949511914016,0.9091621301407388,0.8138558722102992,semi-analytic conditional heuristic; not theorem about primes

@@ -1,0 +1,14 @@
+Références de départ
+
+1. R. J. Lemke Oliver, K. Soundararajan,
+   "Unexpected biases in the distribution of consecutive primes",
+   PNAS 113 (2016), E4446-E4454. DOI: 10.1073/pnas.1605366113.
+
+2. D. K. L. Shiu,
+   "Strings of Congruent Primes",
+   Journal of the London Mathematical Society 61 (2000), 359-373.
+   DOI: 10.1112/S0024610799007863.
+
+3. Cheuk Fung Lau,
+   "Residue Class Patterns of Consecutive Primes",
+   arXiv:2409.12819 (2024).

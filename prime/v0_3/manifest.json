@@ -1,0 +1,18 @@
+{
+  "name": "CONT-P",
+  "version": "0.3",
+  "date": "2026-10-05",
+  "q_values": [
+    30,
+    210,
+    2310,
+    30030
+  ],
+  "prime_bound": 100000000,
+  "main_window": [
+    50000000,
+    100000000
+  ],
+  "status": "exploratory finite computation",
+  "implementation_note": "sparse matched Markov null for Q=30030"
+}

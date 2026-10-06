@@ -1,0 +1,9 @@
+CONT-P v0.8 — theoretical references
+
+1. Lemke Oliver, R. J.; Soundararajan, K. Unexpected biases in the distribution of consecutive primes. PNAS 113 (2016), E4446-E4454. https://doi.org/10.1073/pnas.1605366113
+2. arXiv version: https://arxiv.org/abs/1603.03720
+3. Lemke Oliver, R. J.; Soundararajan, K. The distribution of consecutive prime biases and sums of sawtooth random variables. Math. Proc. Camb. Phil. Soc. 168 (2020), 149-169. https://doi.org/10.1017/S0305004118000592
+4. arXiv version: https://arxiv.org/abs/1709.06168
+5. Lacasa, L.; Luque, B.; Gomez, I.; Miramontes, O. On a Dynamical Approach to Some Prime Number Sequences. Entropy 20 (2018), 131. https://doi.org/10.3390/e20020131
+6. QMC Lab, Statistical Probes of the Local Structure of the Prime Numbers: Order-2 Conditional Mutual Information... (preprint listed May 29, 2026). https://qmc-lab.com/
+7. Desmond, T. Non-Markovian Residue Kernels of Consecutive Primes (2026), DOI listed as https://doi.org/10.5281/zenodo.22707325

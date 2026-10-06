@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "method": "Node JavaScript execution with simulated DOM; no browser layout verification",
+  "witness_views_checked": 14,
+  "download_case_id": "projection-0-1-0",
+  "empty_case_handling": "PASS",
+  "page_script_errors": []
+}

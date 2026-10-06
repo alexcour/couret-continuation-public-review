@@ -1,0 +1,24 @@
+{
+  "name": "CONT-P",
+  "version": "0.5",
+  "date": "2026-10-05",
+  "prime_bound": 100000000,
+  "main_window": [
+    50000000,
+    100000000
+  ],
+  "q_values": [
+    30,
+    210,
+    2310,
+    30030
+  ],
+  "method": "hierarchical backoff; train/validation/test block split",
+  "heldout_history_gain_bits": {
+    "30": 0.002181335510632376,
+    "210": 0.00027671360716752247,
+    "2310": 1.4117528820634107e-05,
+    "30030": -1.031471632328973e-05
+  },
+  "status": "exploratory finite computation"
+}

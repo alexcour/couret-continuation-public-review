@@ -1,0 +1,19 @@
+{
+  "name": "CONT-P",
+  "version": "0.10",
+  "date": "2026-10-06",
+  "status": "perturbative theorem + finite calibration; novelty not established",
+  "frozen": {
+    "G180": 0.0014300013489627617,
+    "G210": 0.0002732275289423214,
+    "observed_suppression_fraction": 0.8089319781827448
+  },
+  "quadratic": {
+    "pair_share_7": 0.6575260783157678,
+    "triplet_share_7": 0.6717835509752857,
+    "predicted_G210_triplet": 0.0004693499648571089
+  },
+  "supersedes": [
+    "v0.9 unweighted pair comparator"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "CONT-P",
+  "version": "0.9",
+  "date": "2026-10-06",
+  "status": "exploratory finite computation + heuristic analytic null",
+  "exact_control": "phi(180)=phi(210)=48; rad(180)=30; rad(210)=210",
+  "empirical_factor7_suppression_fraction": 0.8089319781827514,
+  "pair_proxy_factor7_share": 0.4716111319045083,
+  "triplet_proxy_factor7_share": 0.6717835509752857,
+  "novelty_status": "NOT ESTABLISHED; substantial overlap with Murray 2026 SSRN work"
+}

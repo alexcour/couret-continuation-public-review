@@ -1,0 +1,301 @@
+[
+  {
+    "candidate_states": 1,
+    "tested_depth": 1,
+    "test_requests": 11,
+    "requested_event_steps": 15,
+    "counterexample": [
+      "APPROVE",
+      "COMMIT"
+    ],
+    "hypothesis": {
+      "initial": 0,
+      "alphabet": [
+        "APPROVE",
+        "EDIT",
+        "FAULT",
+        "REARM",
+        "COMMIT"
+      ],
+      "table": [
+        [
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"BLOCKED_REVIEW\",\"view\":\"READY\"}"
+          ]
+        ]
+      ],
+      "access_words": [
+        []
+      ],
+      "distinguishing_suffixes": [
+        [],
+        [
+          "COMMIT"
+        ],
+        [
+          "REARM",
+          "COMMIT"
+        ]
+      ]
+    },
+    "status": "COUNTEREXAMPLE"
+  },
+  {
+    "candidate_states": 3,
+    "tested_depth": 1,
+    "test_requests": 131,
+    "requested_event_steps": 393,
+    "counterexample": [
+      "APPROVE",
+      "FAULT",
+      "REARM",
+      "COMMIT"
+    ],
+    "hypothesis": {
+      "initial": 0,
+      "alphabet": [
+        "APPROVE",
+        "EDIT",
+        "FAULT",
+        "REARM",
+        "COMMIT"
+      ],
+      "table": [
+        [
+          [
+            1,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            2,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"BLOCKED_REVIEW\",\"view\":\"READY\"}"
+          ]
+        ],
+        [
+          [
+            1,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            2,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            1,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"COMMITTED\",\"view\":\"READY\"}"
+          ]
+        ],
+        [
+          [
+            2,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            2,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            2,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            2,
+            "{\"decision\":\"BLOCKED_LOCK\",\"view\":\"LOCKED\"}"
+          ]
+        ]
+      ],
+      "access_words": [
+        [],
+        [
+          "APPROVE"
+        ],
+        [
+          "FAULT"
+        ]
+      ],
+      "distinguishing_suffixes": [
+        [],
+        [
+          "COMMIT"
+        ],
+        [
+          "REARM",
+          "COMMIT"
+        ]
+      ]
+    },
+    "status": "COUNTEREXAMPLE"
+  },
+  {
+    "candidate_states": 4,
+    "tested_depth": 0,
+    "test_requests": 72,
+    "requested_event_steps": 216,
+    "counterexample": null,
+    "hypothesis": {
+      "initial": 0,
+      "alphabet": [
+        "APPROVE",
+        "EDIT",
+        "FAULT",
+        "REARM",
+        "COMMIT"
+      ],
+      "table": [
+        [
+          [
+            1,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            2,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"BLOCKED_REVIEW\",\"view\":\"READY\"}"
+          ]
+        ],
+        [
+          [
+            1,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            3,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            1,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"COMMITTED\",\"view\":\"READY\"}"
+          ]
+        ],
+        [
+          [
+            3,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            2,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            2,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            0,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            2,
+            "{\"decision\":\"BLOCKED_LOCK\",\"view\":\"LOCKED\"}"
+          ]
+        ],
+        [
+          [
+            3,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            2,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            3,
+            "{\"decision\":\"ACK\",\"view\":\"LOCKED\"}"
+          ],
+          [
+            1,
+            "{\"decision\":\"ACK\",\"view\":\"READY\"}"
+          ],
+          [
+            3,
+            "{\"decision\":\"BLOCKED_LOCK\",\"view\":\"LOCKED\"}"
+          ]
+        ]
+      ],
+      "access_words": [
+        [],
+        [
+          "APPROVE"
+        ],
+        [
+          "FAULT"
+        ],
+        [
+          "APPROVE",
+          "FAULT"
+        ]
+      ],
+      "distinguishing_suffixes": [
+        [],
+        [
+          "COMMIT"
+        ],
+        [
+          "REARM",
+          "COMMIT"
+        ]
+      ]
+    },
+    "status": "CERTIFIED_CONDITIONALLY"
+  }
+]

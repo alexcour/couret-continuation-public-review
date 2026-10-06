@@ -1,0 +1,24 @@
+{
+  "name": "CONT-P",
+  "version": "0.2",
+  "date": "2026-10-05",
+  "status": "exploratory finite computation",
+  "base_observable": "p_n mod 30",
+  "present_representations": [
+    30,
+    210,
+    2310
+  ],
+  "prime_bound": 100000000,
+  "null_repetitions": 100,
+  "seed": 12345,
+  "main_null_window": [
+    50000000,
+    100000000
+  ],
+  "excluded_claims": [
+    "intrinsic memory",
+    "asymptotic persistence",
+    "Riemann hypothesis implication"
+  ]
+}

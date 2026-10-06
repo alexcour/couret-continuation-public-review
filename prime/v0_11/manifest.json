@@ -1,0 +1,31 @@
+{
+  "version": "0.11",
+  "files": [
+    "REFERENCES.txt",
+    "manifest.json",
+    "los_poisson_model_sensitivity.csv",
+    "canonical_180_210_prediction.json",
+    "consecutivity_ablation.csv",
+    "THEORY_NOTE.md",
+    "README.md",
+    "canonical_180_210_prediction.csv"
+  ],
+  "canonical": {
+    "model": "LOS-Poissonized conditional singular-series triplet model",
+    "xmid": 75000000,
+    "logx": 18.132998671500584,
+    "hmax": 180,
+    "pmax": 199,
+    "G180_model_raw": 0.0017570695240133253,
+    "G210_model_raw": 0.0004648321794142496,
+    "suppression_model": 0.7354503205129154,
+    "G180_observed": 0.00143000135,
+    "G210_observed": 0.000273227529,
+    "suppression_observed": 0.8089319782809995,
+    "scaled_G210_prediction": 0.0003783063988085984,
+    "scaled_drop_prediction": 0.0010516949511914016,
+    "fraction_observed_drop_explained": 0.9091621301407388,
+    "scale_to_G180": 0.8138558722102992,
+    "epistemic_status": "semi-analytic conditional heuristic; not theorem about primes"
+  }
+}

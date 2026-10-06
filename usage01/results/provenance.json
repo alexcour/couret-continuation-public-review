@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "experiment_date": "2026-10-06",
+  "source_package": "CONT04E_FCI_MEM01_v1_0_2026-10-06",
+  "new_components": [
+    "adapter.py",
+    "diagnose.py",
+    "monitor.py",
+    "protocol_server.py",
+    "replay.py",
+    "report.py",
+    "run_demo.py",
+    "verify_results.py",
+    "tests/test_diagnostic.py"
+  ],
+  "unchanged_reuse": {
+    "active_learner.py": "c57ee42493b09c4813d148902f30e603591b508e4021bd50ef025fbe7f297a07",
+    "conformance.py": "5b3b2438ccbfa9000f2c3c00df1dbcad984ae1f29da7efe4fc8e330a413f8d83"
+  }
+}

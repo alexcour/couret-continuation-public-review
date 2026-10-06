@@ -1,0 +1,17 @@
+test_changed_repeated_observation_is_rejected (test_diagnostic.DiagnosticTests.test_changed_repeated_observation_is_rejected) ... ok
+test_cosmetic_order_difference_is_not_continuation_loss (test_diagnostic.DiagnosticTests.test_cosmetic_order_difference_is_not_continuation_loss) ... ok
+test_http_failure_and_unknown_action_are_not_outputs (test_diagnostic.DiagnosticTests.test_http_failure_and_unknown_action_are_not_outputs) ... ok
+test_memory_updates_and_rejects_mismatched_outputs (test_diagnostic.DiagnosticTests.test_memory_updates_and_rejects_mismatched_outputs) ... ok
+test_missing_state_bound_gap_cannot_certify (test_diagnostic.DiagnosticTests.test_missing_state_bound_gap_cannot_certify) ... ok
+test_real_http_alias_and_mutation (test_diagnostic.DiagnosticTests.test_real_http_alias_and_mutation) ... candidate 1: counterexample after 11 tests
+candidate 3: counterexample after 131 tests
+ok
+test_restricted_alphabet_with_no_witness_completes (test_diagnostic.DiagnosticTests.test_restricted_alphabet_with_no_witness_completes) ... ok
+test_too_small_state_bound_is_inconclusive (test_diagnostic.DiagnosticTests.test_too_small_state_bound_is_inconclusive) ... candidate 1: counterexample after 11 tests
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.252s
+
+OK
+

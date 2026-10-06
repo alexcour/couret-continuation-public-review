@@ -1,0 +1,4 @@
+version,previous_statement,status_v0_10,reason
+v0.9,"pair proxy gives ~47.2% and triplet ~67.2%, suggesting triplet is much closer",SUPERSEDED,pair proxy omitted frequency weighting; the correct KL/Fisher quadratic pair weight gives ~65.8%
+v0.9,triplet-specific sensitivity to factor 7 is strongly established,WEAKENED,proper pair and triplet quadratic weights are close: ~65.8% vs ~67.2%
+v0.9,local Euler null explains most of observed 80.9% suppression,RETAINED WITH QUALIFIER,"second-order triplet prediction captures ~83.0% of observed delta, but leaves material residual and is conditional on additive/uncorrelated local scores"

@@ -1,0 +1,8 @@
+quantity,pair_model,triplet_model,observed_or_reference
+fraction_of_hidden_local_quadratic_weight_at_7,0.6575260783157678,0.6717835509752857,0.8089319781827448
+predicted_or_observed_delta_G_bits,0.0009402631789697424,0.0009606513841056527,0.0011567738200204403
+predicted_or_observed_G210_bits,0.0004897381699930192,0.0004693499648571089,0.0002732275289423214
+predicted_delta_fraction_of_observed_delta,0.8128323469086878,0.8304574044463402,1.0
+residual_G210_prediction_minus_observed,0.00021651064105069782,0.00019612243591478752,0.0
+descriptive_rectangle_delta_low,,,0.0008799813376883559
+descriptive_rectangle_delta_high,,,0.0014335663023538074
