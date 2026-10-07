@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Working public-review candidate; cite the actual public commit after publication. No DOI assigned."
+message: "Working public-review version; cite the actual public commit used. No DOI assigned."
 title: "Continuation and representation: general notes, controlled diagnostic and finite prime experiments"
 type: software
 version: "0.1.0-review"

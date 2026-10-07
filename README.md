@@ -1,7 +1,8 @@
 # Continuation and representation Working public review
 
 Review package 0.1.0-review, prepared 2026-10-06 by Alexandre Couret.
-This prepared source has not yet been published by the pack builder.
+This source is publicly available for review at
+https://github.com/alexcour/couret-continuation-public-review.
 
 This repository joins general CONT notes, a controlled HTTP permissions diagnostic,
 and finite prime-continuation experiments. The industrial FCI authority model,
