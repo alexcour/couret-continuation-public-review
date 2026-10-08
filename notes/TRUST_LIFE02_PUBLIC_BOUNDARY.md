@@ -16,3 +16,7 @@ In particular, the lifecycle work must not be described here as proving:
 A separate release decision, scope audit, rights check, reproducibility review and independent verification are necessary before bringing any experimental data or numerical result into the public release. No GitHub release, DOI, archival priority or stable status is created by this note.
 
 This file only records the **exclusion and review gate**, without altering the historical frozen protocol or this repository's existing public theorem claims.
+
+## Subsequent private robustness study — TRUST-LIFE-03
+
+The private research workspace has separately frozen a prospective four-scenario study of cache-key churn (continuous changes, front-loaded burst, intermittent recurrence and a stable control). Frozen A.30/A.31 algorithms, exact-key authorization and all paid cost categories remain unchanged. This is **not** a public validation, a public dataset, a universal cost claim, or permission to distribute the private archive. Preserve the non-release gate for the later experiment as well; no outputs from that study are included in this repository.
