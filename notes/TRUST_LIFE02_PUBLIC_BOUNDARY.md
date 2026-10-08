@@ -20,3 +20,7 @@ This file only records the **exclusion and review gate**, without altering the h
 ## Subsequent private robustness study — TRUST-LIFE-03
 
 The private research workspace has separately frozen a prospective four-scenario study of cache-key churn (continuous changes, front-loaded burst, intermittent recurrence and a stable control). Frozen A.30/A.31 algorithms, exact-key authorization and all paid cost categories remain unchanged. This is **not** a public validation, a public dataset, a universal cost claim, or permission to distribute the private archive. Preserve the non-release gate for the later experiment as well; no outputs from that study are included in this repository.
+
+## TRUST-LIFE-04 — causal cache-admission preregistration (private)
+
+A separate private, prospective TRUST-LIFE-04 protocol tests a one-bit HISTORY cache-admission decision based only on the duration of the **previous completed** exact-key block. It compares the unchanged COLD, CACHE and DELAYED benchmarks with a fully charged HISTORY policy on fresh historical-engine panels. The protocol and executable code were frozen in the private workspace *before new panel generation*. Publication boundaries are unchanged: no confidential archives, source code, claim of advantage, per-query outputs, Google Drive private links, general proof or novel priority in the public repo. The draft PR remains a review of release-scope language, not an experimental publication.
