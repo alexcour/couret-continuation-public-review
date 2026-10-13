@@ -3,6 +3,8 @@
 **Status (2026-10-13): documentary working note / NOT PEER-REVIEWED / NO NEW THEOREM / NO EXPERIMENT PERFORMED.**  
 Scope: Greek manuscript cataloguing, document reconstruction and an *unimplemented* protocol for studying present-day reading behaviour. This case is outside the stable mathematical claims of this repository. No theological inference or claim concerning historical reader cognition is made.
 
+**Current source acquisition: G0.5.** [Detailed witness-specific collation](CODH01_G05_COLLATION.md) and [structured six-slot record](CODH01_COLLATION.json). The Glasgow TEI of reconstructed **87r**, explicitly mapped to **Paris, BnF, Coislin 202, 11r**, now supplies Greek edition entries **K2–K6**, with uncertainty and Omont-derived restorations retained. K1 is absent from this acquired page and remains tradition-level only. Five edition entries acquired does **not** mean five independently certified diplomatic readings. The older G0.4 record is a historical acquisition snapshot.
+
 ## 1. What is actually attested?
 
 The Codex H of the Pauline Epistles is Gregory–Aland **015** (GA 015), catalogued as **F.1** by Allen, Fowler, Scieri and Venetskov, *The Euthalian Tradition of the New Testament: A Catalogue of Greek Manuscripts* (2025), printed pp. **324–325** (PDF pages 334–335). The entry enumerates distributed fragments, **chapter lists**, **kephalaia numbers [P]** and **quotation markers [P]**. It does **not** explicitly list **in-text kephalaia titles** among the attested in-text features in that entry. Absence from the catalogue inventory is not proof of historical absence.
@@ -15,18 +17,18 @@ The Pinakes explanation states that Titus has no *subdivisions* of chapters and 
 
 ## 2. Evidence ledger: do not fill blanks by inference
 
-Machine-readable current snapshot: [CODH01_EVIDENCE.csv](CODH01_EVIDENCE.csv). A nonempty string under `reported_text` is **only** attributed to the `source_layer` stated in that row. No row is certified as a diplomatic GA 015 transcription.
+Machine-readable current snapshot: [CODH01_EVIDENCE.csv](CODH01_EVIDENCE.csv). A nonempty string under `reported_text` is **only** attributed to the `source_layer` stated in that row. No row has completed this dossier's independent diplomatic validation. The flag does not deny the existence of the scholarly GA015 edition. Braces mark `unclear`, square brackets `supplied`, parentheses `ex`; original XML controls exact encoding.
 
 | Rubric | Available evidence | GA 015 Greek verified? |
 |---|---|---|
 | K1 | Greek incipit in the Pinakes *tradition-level* catalogue | **No** |
-| K2 | Not extracted from a critically checked source | **No** |
-| K3 | Not extracted from a critically checked source | **No** |
-| K4 | Not extracted from a critically checked source | **No** |
-| K5 | Titus 3:1–9 and English title reported by a secondary article citing Allen | **No** |
-| K6 | Greek desinit in Pinakes; source-specific variant readings occur | **No** |
+| K2 | GA015 digital edition 87r, lines 1–3; uncertain letters and Omont-supplied final sigma | **No** |
+| K3 | GA015 digital edition 87r, lines 4–6; encoded marginal gamma at 90r between Titus 2:1 and 2:2 | **No** |
+| K4 | GA015 digital edition 87r, lines 7–9; uncertain letters and unexpanded nomen sacrum | **No** |
+| K5 | GA015 digital edition 87r, lines 10–12; Omont-supplied final sigma; Titus 3:1–9 remains a separate secondary report | **No** |
+| K6 | GA015 digital edition 87r, lines 13–15: plural and αἱριστικοὺς; compared with witness-specific Pinakes reports | **No** |
 
-The sixth rubric illustrates a genuine transmission question: Pinakes gives `ἐριστικοὺς` for the tradition-level reading but reports `αἱρετικοὺς` in British Library Add. 28816 and `ἐριστηκοὺς` in Harley 5557. Those readings are **not assigned** to GA 015 without folio/image collation. Witnesses are genealogically related and cannot be counted as statistically independent observations.
+The sixth rubric illustrates a transmission question: the acquired GA015 TEI gives `αἱριστικοὺς` and plural `παραινέσεις`; Omont p. 50 has the same distinctive letter sequence and plural. Pinakes gives `ἐριστικοὺς` at work level, `αἱρετικοὺς` for British Library Add. 28816 and `ἐριστηκοὺς` for Harley 5557. These forms are **not substituted** for the GA015 edition's wording. Semantic interpretation and independent paleographic review remain open. The sources cannot be counted as independent observations: Glasgow explicitly supplies two letters from Omont.
 
 **Critical correction to earlier exploration:** an OCR corpus issued in 2026 for volumes of the *Patrologia Graeca* cannot by itself verify PG 85 here. At the time of this audit, the volume directories in `calfa-co/Patrologia-Graeca` **do not include PG085**. Its reported corpus-level character error rate is not a page-level verification, nor a direct copy of GA 015.
 
@@ -63,5 +65,7 @@ Conditional experimental question (once G0/G1 are satisfied): holding the words 
 5. Allen et al. (2026, accepted/in press), *Codex H of the Pauline Epistles (GA 015): Introduction and Edition*: https://research.rug.nl/en/publications/codex-h-of-the-pauline-epistles-ga-015-introduction-and-edition/
 6. Digital scholarly edition (manuscript transcription must be checked directly): https://codexh.arts.gla.ac.uk/
 7. Vidal-Gorène & Kindt (2026), *The Patrologia Graeca Corpus*, LREC, https://aclanthology.org/2026.lrec-1.517/ ; data repository https://github.com/calfa-co/Patrologia-Graeca (PG085 absent from the inspected directory list).
+8. Omont (1889), *Notice sur un très ancien manuscrit grec en onciales des Épîtres de Saint Paul*, printed p. 50 / PDF page 55, directly inspected typographic transcription K2–K6, Coislin 202, 11r: https://archive.org/details/noticesuruntrsa00omongoog/page/n54/mode/2up
+9. Glasgow/INTF TEI 87r and metadata, acquired 2026-10-13, preserved with CC BY 4.0 attribution in `sources/`: https://codexh.arts.gla.ac.uk/data/G015-Images/87r/87r.xml ; https://codexh.arts.gla.ac.uk/data/output_data.json
 
 **Reuse constraint.** This note paraphrases source catalogues, gives short textual examples for identification, and preserves the intellectual property and image rights of the source institutions. It contains no third-party facsimile, book PDF, full edition or unlicensed experimental material.

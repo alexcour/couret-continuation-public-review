@@ -1,0 +1,92 @@
+{
+  "source_url": "https://codexh.arts.gla.ac.uk/data/output_data.json",
+  "full_source_sha256": "352727b2e7746aaa8d8cc052025089bead5a5c63cac225a0ec0b30c501ab9066",
+  "retrieved_date": "2026-10-13",
+  "selection_note": "Subset only; library folio differs from reconstructed folio; T denotes transfer support in this metadata.",
+  "entries": [
+    {
+      "folio": "86v",
+      "pageId": "749",
+      "hasImage": true,
+      "hasTranscription": false,
+      "biblicalContent": "",
+      "libraryFolio": "Paris, BnF, Coislin 202, 11rT",
+      "libraryFolioLink": "",
+      "diktyonNumber": "D49341",
+      "diktyonLink": "https://pinakes.irht.cnrs.fr/notices/cote/49341/",
+      "externalImages": [],
+      "noImageText": "",
+      "noImageLink": ""
+    },
+    {
+      "folio": "87r",
+      "pageId": "750",
+      "hasImage": true,
+      "hasTranscription": true,
+      "biblicalContent": "Titus Chapter List",
+      "libraryFolio": "Paris, BnF, Coislin 202, 11r",
+      "libraryFolioLink": "https://gallica.bnf.fr/ark:/12148/btv1b8577515k/f35.item",
+      "diktyonNumber": "D49341",
+      "diktyonLink": "https://pinakes.irht.cnrs.fr/notices/cote/49341/",
+      "externalImages": [],
+      "noImageText": "",
+      "noImageLink": ""
+    },
+    {
+      "folio": "87v",
+      "pageId": "760",
+      "hasImage": true,
+      "hasTranscription": true,
+      "biblicalContent": "Titus 1:1-3",
+      "libraryFolio": "Paris, BnF, Coislin 202, 11v",
+      "libraryFolioLink": "https://gallica.bnf.fr/ark:/12148/btv1b8577515k/f36.item",
+      "diktyonNumber": "D49341",
+      "diktyonLink": "https://pinakes.irht.cnrs.fr/notices/cote/49341/",
+      "externalImages": [],
+      "noImageText": "",
+      "noImageLink": ""
+    },
+    {
+      "folio": "90r",
+      "pageId": "770",
+      "hasImage": true,
+      "hasTranscription": true,
+      "biblicalContent": "Titus 1:15-2:2",
+      "libraryFolio": "Paris, BnF, Coislin 202, 12r",
+      "libraryFolioLink": "https://gallica.bnf.fr/ark:/12148/btv1b8577515k/f37.item",
+      "diktyonNumber": "D49341",
+      "diktyonLink": "https://pinakes.irht.cnrs.fr/notices/cote/49341/",
+      "externalImages": [],
+      "noImageText": "",
+      "noImageLink": ""
+    },
+    {
+      "folio": "90v",
+      "pageId": "780",
+      "hasImage": true,
+      "hasTranscription": true,
+      "biblicalContent": "Titus 2:2-5",
+      "libraryFolio": "Paris, BnF, Coislin 202, 12v",
+      "libraryFolioLink": "https://gallica.bnf.fr/ark:/12148/btv1b8577515k/f38.item",
+      "diktyonNumber": "D49341",
+      "diktyonLink": "https://pinakes.irht.cnrs.fr/notices/cote/49341/",
+      "externalImages": [],
+      "noImageText": "",
+      "noImageLink": ""
+    },
+    {
+      "folio": "92v",
+      "pageId": "789",
+      "hasImage": true,
+      "hasTranscription": true,
+      "biblicalContent": "Titus 3:9-12",
+      "libraryFolio": "Paris, BnF, Coislin 202, 13rT",
+      "libraryFolioLink": "",
+      "diktyonNumber": "D49341",
+      "diktyonLink": "https://pinakes.irht.cnrs.fr/notices/cote/49341/",
+      "externalImages": [],
+      "noImageText": "",
+      "noImageLink": ""
+    }
+  ]
+}

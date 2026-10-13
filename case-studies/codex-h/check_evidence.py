@@ -19,7 +19,7 @@ HEADERS = [
     "ga015_greek_diplomatic_verified",
     "notes",
 ]
-SOURCE_LAYERS = {"unverified", "tradition_Pinakes", "secondary_report"}
+SOURCE_LAYERS = {"unverified", "tradition_Pinakes", "secondary_report", "GA015_digital_edition"}
 
 
 def validate_rows(rows, headers):
@@ -34,6 +34,7 @@ def validate_rows(rows, headers):
         raise ValueError(f"Rubrics must be unique and ordered: {actual!r}")
 
     attributed = 0
+    digital = 0
     for row in rows:
         rubric = row["rubric_id"]
         if None in row or any(row.get(k) is None for k in HEADERS):
@@ -59,10 +60,19 @@ def validate_rows(rows, headers):
                 raise ValueError(f"{rubric}: source attribution and text are both required")
             if layer == "tradition_Pinakes" and reported_alignment:
                 raise ValueError(f"{rubric}: tradition-level title cannot assert GA015 alignment")
+            if layer == "GA015_digital_edition":
+                digital += 1
+                if source_id != "GLASGOW_GA015_87r_20261013":
+                    raise ValueError(f"{rubric}: digital edition needs its documented source receipt")
+                if rubric == "K1":
+                    raise ValueError("K1 is absent from the acquired 87r transcription")
+                if reported_alignment:
+                    raise ValueError(f"{rubric}: acquired title alone cannot assert a complete verse span")
         if rubric == "K5" and layer == "secondary_report" and not reported_alignment:
             raise ValueError("K5: the recorded secondary report requires its cited alignment")
 
-    return {"slots": 6, "attributed_non_diplomatic": attributed, "ga015_verified": 0}
+    return {"slots": 6, "attributed_non_diplomatic": attributed,
+            "digital_edition_entries": digital, "ga015_verified": 0}
 
 
 def validate_csv(path):
@@ -83,6 +93,7 @@ def main():
     print(
         "PASS (structural only): {slots} slots; {attributed_non_diplomatic} "
         "attributed non-diplomatic entries; {ga015_verified} GA015 readings verified. "
+        "{digital_edition_entries} GA015 edition entries acquired. "
         "No historical claim certified.".format(**summary)
     )
 

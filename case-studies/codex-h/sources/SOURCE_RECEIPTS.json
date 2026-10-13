@@ -1,0 +1,44 @@
+{
+  "retrieved_date": "2026-10-13",
+  "attribution": "INTF 2026; transcription Garrick V. Allen, Kimberley A. Fowler, Emanuele Scieri, Maxim Venetskov; encoding Ivan Bacher (ADAPT Centre D-Lab)",
+  "license": "CC BY 4.0 as stated in TEI header; source files copied unchanged",
+  "files": [
+    {
+      "path": "sources/GA015_87r.xml",
+      "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/87r/87r.xml",
+      "size_bytes": 5273,
+      "sha256": "632a81f770c9f6d47ecf2d1614ddbfbc17620c965cd3b921004b19508c1cea2f"
+    },
+    {
+      "path": "sources/GA015_90r.xml",
+      "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/90r/90r.xml",
+      "size_bytes": 5439,
+      "sha256": "d804fd3351ab1f17fc3d252794172c62fb2def422a6c55b97a89439c1037b74f"
+    }
+  ],
+  "other_sources_consulted": [
+    {
+      "url": "https://pinakes.irht.cnrs.fr/notices/oeuvre/15355/",
+      "downloaded_sha256": "83610a939f88cc80fa93057ea67ad07ee130d7e098fee73912e32e0d7813ebd7",
+      "not_redistributed": true
+    },
+    {
+      "url": "https://archive.org/download/noticesuruntrsa00omongoog/noticesuruntrsa00omongoog.pdf",
+      "downloaded_sha256": "3a66bc18a173bee658bfc82e9b5b110a6e201ab7dc2cb7ef738586c30d8e4a89",
+      "printed_page": 50,
+      "physical_pdf_page": 55,
+      "not_redistributed": true
+    }
+  ],
+  "images": {
+    "source": "https://codexh.arts.gla.ac.uk/data/G015-Images/87r/87r.dzi",
+    "width": 5280,
+    "height": 7100,
+    "inspected_levels": [
+      10,
+      11
+    ],
+    "redistributed": false,
+    "note": "Visual inspection only; no determination of chronology or complete independent diplomatic validation."
+  }
+}

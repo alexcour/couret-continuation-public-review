@@ -42,8 +42,9 @@ class TestLedger(unittest.TestCase):
             validate_rows(self.alter(0, "source_layer", "GA015_diplomatic"), HEADERS)
 
     def test_unverified_cannot_smuggle_text(self):
+        rows = self.alter(1, "source_layer", "unverified")
         with self.assertRaises(ValueError):
-            validate_rows(self.alter(1, "reported_text", "fabricated title"), HEADERS)
+            validate_rows(rows, HEADERS)
 
     def test_source_attribution_required(self):
         with self.assertRaises(ValueError):
@@ -56,6 +57,31 @@ class TestLedger(unittest.TestCase):
     def test_column_change_requires_review(self):
         with self.assertRaises(ValueError):
             validate_rows(self.rows, HEADERS[:-1])
+
+    def test_digital_source_receipt_required(self):
+        with self.assertRaises(ValueError):
+            validate_rows(self.alter(1, "source_id", "IRHT_CPG3642"), HEADERS)
+
+    def test_digital_title_is_not_complete_span(self):
+        with self.assertRaises(ValueError):
+            validate_rows(self.alter(1, "reported_alignment", "Titus 1:10-16"), HEADERS)
+
+    def test_k1_cannot_be_taken_from_87r(self):
+        rows = deepcopy(self.rows)
+        rows[0].update(source_layer="GA015_digital_edition",
+                       source_id="GLASGOW_GA015_87r_20261013")
+        with self.assertRaises(ValueError):
+            validate_rows(rows, HEADERS)
+
+    def test_acquired_xml_has_five_rubrics_and_supplied_letters(self):
+        import xml.etree.ElementTree as ET
+        ns = {"t": "http://www.tei-c.org/ns/1.0"}
+        root = ET.parse(ROOT / "sources" / "GA015_87r.xml").getroot()
+        self.assertEqual([e.get("n") for e in root.findall(".//t:num[@type='chapNum']", ns)],
+                         ["2", "3", "4", "5", "6"])
+        supplied = root.findall(".//t:supplied", ns)
+        self.assertEqual([(e.text, e.get("source")) for e in supplied],
+                         [("ς", "Omont"), ("ς", "Omont")])
 
 
 if __name__ == "__main__":
