@@ -69,3 +69,13 @@ Conditional experimental question (once G0/G1 are satisfied): holding the words 
 9. Glasgow/INTF TEI 87r and metadata, acquired 2026-10-13, preserved with CC BY 4.0 attribution in `sources/`: https://codexh.arts.gla.ac.uk/data/G015-Images/87r/87r.xml ; https://codexh.arts.gla.ac.uk/data/output_data.json
 
 **Reuse constraint.** This note paraphrases source catalogues, gives short textual examples for identification, and preserves the intellectual property and image rights of the source institutions. It contains no third-party facsimile, book PDF, full edition or unlicensed experimental material.
+
+## G0.5 — source-specific K6 apparatus (2026-10-13)
+
+New files: [CODH01_K6_VARIANTS.csv](CODH01_K6_VARIANTS.csv), [validate_variants.py](validate_variants.py) and [tests/test_variants.py](tests/test_variants.py). They keep four **catalogue-derived**, source-attributed records separate: Pinakes work-level desinit, BL Add. 28816 f.113, BL Harley 5557 f.264v and BnF grec 237 f.196v. All have `ga015_diplomatic_verified=false`.
+
+The program strips diacritics solely to compare character sequences mechanically. It does **not** classify etymology, determine historical dependence among witnesses, establish a chronology of changes, or certify a facsimile reading. The three witness-level strings are non-identical to the work-level baseline under this normalization. These are *textual string differences*, not three established independent historical innovations.
+
+A complete scanned *Patrologia Graeca* vol. 85 is locatable at https://commons.wikimedia.org/wiki/File:Patrologia_Graeca_Vol._085.pdf . Its indicated columns 785B–C have **not** been independently transcribed and compared with K2–K4 in this audit. Do not promote those missing rows. The full 2026 Greek edition or a direct reading of GA015 folios is still required for diplomatic collation.
+
+**Scientific gate remains G0 PARTIAL; 0/6 Codex H Greek titles directly verified.** The change is a traceable variant test corpus, not a discovery about GA015 or a validated psychological effect.
