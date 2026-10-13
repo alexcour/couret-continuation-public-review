@@ -34,6 +34,8 @@ jobs:
              'XML entries: '+str(d['xml_count']),
              '86v/87r member candidates: '+str(len(focus)),
              'No ancient reading is certified by this automated check.']
+          for x in entries[:15]:
+              s.append('XML member inventory: '+str(x.get('member'))+' / folios '+str(x.get('folio_ids'))+' / numbers '+str(x.get('rubric_numbers')))
           for x in focus[:15]:
               s.append('Candidate: '+str(x.get('member'))+' / folios '+str(x.get('folio_ids'))+' / numbers '+str(x.get('rubric_numbers')))
           Path('/tmp/codh01_summary.txt').write_text('\n'.join(s)+'\n',encoding='utf-8')
