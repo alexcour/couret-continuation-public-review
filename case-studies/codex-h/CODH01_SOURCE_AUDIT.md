@@ -91,3 +91,8 @@ A complete scanned *Patrologia Graeca* vol. 85 is locatable at https://commons.w
 The additional [four-record K6 notice-level variant file](CODH01_K6_VARIANTS.csv) is a **supplement to, not a replacement for**, G0.5's richer GA015-versus-other-witness apparatus. It does not contain the GA015 TEI reading `παραινέσεις ... αἱριστικοὺς`, which belongs to the primary [G0.5 collation record](CODH01_COLLATION.json). Keep witness-specific orthographic differences separate from semantic claims. K2–K6 are *edition-level acquisitions*, **not** five independently validated facsimile readings. K1 and the complete bibliographic alignments are still open.
 
 Workflow: the 7 new tests validate the four-row notice-level file only; previously documented G0.5 source files and tests remain authoritative for TEI and collation. Neither suite supplies a stemma, historically independent witness count, exhaustive body-text partition, or evidence for effects on readers. G0 partial, G1 not undertaken, G2–G3 blocked. PR stays **DRAFT**.
+
+
+## G0.7 archive acquisition gate
+
+A public official Glasgow TEI/XML dataset is identified as DOI [10.5525/gla.researchdata.2105](https://researchdata.gla.ac.uk/2105/), distinct from the on-request multispectral images DOI [10.5525/gla.researchdata.1865](https://researchdata.gla.ac.uk/1865/). See [G0.7 note](CODH01_G07_ARCHIVE_GATE.md) and [bounded ZIP inspector](inspect_glasgow_2105.py). The full archive could not be retrieved in this session and **no new K1 reading has been authenticated**. K2–K6 continue to be acquired edition-level texts without independent palaeographic certification. G0 remains partial, PR draft.
