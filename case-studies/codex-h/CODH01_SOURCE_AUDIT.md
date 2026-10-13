@@ -79,3 +79,11 @@ The program strips diacritics solely to compare character sequences mechanically
 A complete scanned *Patrologia Graeca* vol. 85 is locatable at https://commons.wikimedia.org/wiki/File:Patrologia_Graeca_Vol._085.pdf . Its indicated columns 785B–C have **not** been independently transcribed and compared with K2–K4 in this audit. Do not promote those missing rows. The full 2026 Greek edition or a direct reading of GA015 folios is still required for diplomatic collation.
 
 **Scientific gate remains G0 PARTIAL; 0/6 Codex H Greek titles directly verified.** The change is a traceable variant test corpus, not a discovery about GA015 or a validated psychological effect.
+
+### G0.6 reconciliation — superseding source-state correction (2026-10-13)
+
+**Important: [G0.5's Glasgow TEI collation](CODH01_G05_COLLATION.md) supersedes the earlier statement that zero rubric *texts* were available for GA015.** The TEI edition supplies **five attributed texts, K2–K6**, on reconstructed folio 87r (= Paris BnF Coislin 202, fol. 11r). **K1 remains unknown in GA015**. The status field `ga015_greek_diplomatic_verified=false` refers strictly to absence of independent philological *certification*, not absence of an edited transcription. Do not conflate these conditions.
+
+The additional [four-record K6 notice-level variant file](CODH01_K6_VARIANTS.csv) is a **supplement to, not a replacement for**, G0.5's richer GA015-versus-other-witness apparatus. It does not contain the GA015 TEI reading `παραινέσεις ... αἱριστικοὺς`, which belongs to the primary [G0.5 collation record](CODH01_COLLATION.json). Keep witness-specific orthographic differences separate from semantic claims. K2–K6 are *edition-level acquisitions*, **not** five independently validated facsimile readings. K1 and the complete bibliographic alignments are still open.
+
+Workflow: the 7 new tests validate the four-row notice-level file only; previously documented G0.5 source files and tests remain authoritative for TEI and collation. Neither suite supplies a stemma, historically independent witness count, exhaustive body-text partition, or evidence for effects on readers. G0 partial, G1 not undertaken, G2–G3 blocked. PR stays **DRAFT**.
