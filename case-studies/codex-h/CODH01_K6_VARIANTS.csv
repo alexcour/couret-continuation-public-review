@@ -1,0 +1,5 @@
+record_id,rubric_id,source_layer,witness,folio,reading,source_url,ga015_diplomatic_verified
+K6-BASE,K6,Pinakes_work_notice,Editorial work-level desinit,NA,Παραίνεσις περὶ τοῦ ἐκκλίνειν τοὺς ἐριστικοὺς ζητητάς,https://pinakes-dev.irht.cnrs.fr/notices/oeuvre/15355/,false
+K6-BLADD,K6,Pinakes_witness_description,British Library Add. 28816,113,παραίνεσις περὶ τοῦ ἐκκλίνειν τοὺς αἱρετικοὺς ζητητάς,https://pinakes-dev.irht.cnrs.fr/notices/oeuvre/15355/,false
+K6-BLHAR,K6,Pinakes_witness_description,British Library Harley 5557,264v,Παραίνεσις περὶ τοῦ ἐκκλίνειν τοὺς ἐριστηκοὺς ζητητάς,https://pinakes-dev.irht.cnrs.fr/notices/oeuvre/15355/,false
+K6-BNF,K6,Pinakes_witness_description,BNF grec 0237,196v,Παραίνεσις περι τοῦ ἐκκλείνειν τοὺς αῥετικοὺς καὶ συζητήσας,https://pinakes-dev.irht.cnrs.fr/notices/oeuvre/15355/,false
