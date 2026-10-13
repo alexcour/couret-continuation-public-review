@@ -18,5 +18,8 @@ jobs:
           python-version: '3.12'
       - name: Validate evidence ledger structure (NOT historical verification)
         run: python3 case-studies/codex-h/check_evidence.py
+      - name: Validate source-specific K6 variants
+        run: python3 case-studies/codex-h/validate_variants.py
       - name: Run negative provenance tests
         run: python3 -m unittest discover -s case-studies/codex-h/tests -v
+
