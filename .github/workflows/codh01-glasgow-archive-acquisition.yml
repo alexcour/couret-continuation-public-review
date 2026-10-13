@@ -41,3 +41,20 @@ jobs:
           Path('/tmp/codh01_summary.txt').write_text('\n'.join(s)+'\n',encoding='utf-8')
           print('\n'.join(s))
           PY
+      - name: Scan all pages and context in combined XML (not diplomatic verification)
+        run: |
+          python3 case-studies/codex-h/probe_combined_tei.py --download --output /tmp/codh01_full_probe.json > /dev/null
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('/tmp/codh01_full_probe.json').read_text())
+          print("DOI:",d["dataset_doi"],"SHA256:",d["zip_sha256"])
+          for m in d["members"]:
+              print("MEMBER:",m["member"],"PAGE_COUNT:",m.get("page_count"),
+                    "86v:",m.get("exact_86v_present"),"87r:",m.get("exact_87r_present"))
+              print("TITUS_DIVISIONS:",json.dumps(m.get("titus_divisions",[]),ensure_ascii=False))
+              print("K1_NUMERIC_CANDIDATES:",json.dumps(m.get("chapNum_one_examples",[]),ensure_ascii=False))
+              print("FOCUS_PAGES:",json.dumps(m.get("titus_focus_pages",{}),ensure_ascii=False))
+              print("LEXICAL_FOCUS:",json.dumps(m.get("lexical_matches_focus",[]),ensure_ascii=False))
+          print("Only structural/source observations. No K1 claimed.")
+          PY
