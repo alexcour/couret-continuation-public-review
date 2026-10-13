@@ -22,4 +22,5 @@ jobs:
         run: python3 case-studies/codex-h/validate_variants.py
       - name: Run negative provenance tests
         run: python3 -m unittest discover -s case-studies/codex-h/tests -v
-
+      - name: Audit acquired Titus TEI sources (NOT complete manuscript reconstruction)
+        run: python3 case-studies/codex-h/audit_titus_sources.py

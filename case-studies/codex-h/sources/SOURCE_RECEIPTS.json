@@ -14,6 +14,54 @@
       "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/90r/90r.xml",
       "size_bytes": 5439,
       "sha256": "d804fd3351ab1f17fc3d252794172c62fb2def422a6c55b97a89439c1037b74f"
+    },
+    {
+      "path": "sources/GA015_87v.xml",
+      "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/87v/87v.xml",
+      "size_bytes": 5345,
+      "sha256": "fda51dd159cb1b809c8cfd31c8b1f13fa183024a31125923b88792e7557b2379"
+    },
+    {
+      "path": "sources/GA015_88r.xml",
+      "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/88r/88r.xml",
+      "size_bytes": 6587,
+      "sha256": "0ce92292a04b6da8ec4d258c153b796dbdca44b8c7e057950989d5a34123eb87"
+    },
+    {
+      "path": "sources/GA015_89v.xml",
+      "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/89v/89v.xml",
+      "size_bytes": 5547,
+      "sha256": "2fd65bc5ac5dc4f52a226ae37e5b7fc77384ff616b4a1adfddb2b46f8b401912"
+    },
+    {
+      "path": "sources/GA015_90v.xml",
+      "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/90v/90v.xml",
+      "size_bytes": 4584,
+      "sha256": "1221f286116276060e621f7ce82c830f071fb98b98b1141b1d40321e7009333f"
+    },
+    {
+      "path": "sources/GA015_91r.xml",
+      "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/91r/91r.xml",
+      "size_bytes": 4622,
+      "sha256": "b40909abc61a56b3220723320959477ddc2baf7121885095ce659541f1f139b6"
+    },
+    {
+      "path": "sources/GA015_92v.xml",
+      "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/92v/92v.xml",
+      "size_bytes": 5728,
+      "sha256": "47b80c81b7666b33c06a5fde46f6f31d845b4b727dbb8eb9296188a6906b1488"
+    },
+    {
+      "path": "sources/GA015_93r.xml",
+      "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/93r/93r.xml",
+      "size_bytes": 4916,
+      "sha256": "8d07491ec78f9a4975a6a7841163fe34397e164f3468b449ac2c58d7b49c25e1"
+    },
+    {
+      "path": "sources/GA015_93v.xml",
+      "source_url": "https://codexh.arts.gla.ac.uk/data/G015-Images/93v/93v.xml",
+      "size_bytes": 4729,
+      "sha256": "31e23efca006a7e232ca8069dda337c104faf5629b186e046c40baaddf5537d8"
     }
   ],
   "other_sources_consulted": [
@@ -28,6 +76,34 @@
       "printed_page": 50,
       "physical_pdf_page": 55,
       "not_redistributed": true
+    },
+    {
+      "url": "https://eprints.gla.ac.uk/342036/2/342036.pdf",
+      "downloaded_sha256": "bd5eb8a0adb20287b5241e94bff8f4e59592bc60863de03c1ff5f8108e09b4fe",
+      "printed_pages": [
+        195,
+        196
+      ],
+      "physical_pdf_pages": [
+        29,
+        30
+      ],
+      "not_redistributed": true
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Patrologia_Graeca_Vol._085.pdf",
+      "downloaded_sha256": "d6bb6e0362670d4c91834a7a2712f9aad8612df4624ea7488beb74969d0a2d42",
+      "size_bytes": 113582035,
+      "physical_pdf_pages": [
+        393,
+        394
+      ],
+      "printed_columns": [
+        "785-786",
+        "787-788"
+      ],
+      "source_status": "public domain printed edition; locally rendered and inspected, no GA015 certification",
+      "not_redistributed": true
     }
   ],
   "images": {
@@ -40,5 +116,19 @@
     ],
     "redistributed": false,
     "note": "Visual inspection only; no determination of chronology or complete independent diplomatic validation."
-  }
+  },
+  "images_additional_inspection": [
+    {
+      "source": "https://codexh.arts.gla.ac.uk/data/G015-Images/86v/86v.dzi",
+      "inspected_level": 11,
+      "outcome": "no securely attributable K1 wording recovered in this inspection",
+      "redistributed": false
+    },
+    {
+      "source": "https://codexh.arts.gla.ac.uk/data/G015-Images/90r/90r.dzi",
+      "inspected_level": 10,
+      "outcome": "visual overview; no independent philological certification",
+      "redistributed": false
+    }
+  ]
 }
