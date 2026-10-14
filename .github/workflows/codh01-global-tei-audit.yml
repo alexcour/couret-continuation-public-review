@@ -22,7 +22,7 @@ jobs:
           python-version: '3.12'
       - name: Unit-test multi-body and modern-reference separation
         run: |
-          python3 -m unittest discover -s case-studies/codex-h/tests -p 'test_global_tei.py' -v
+          PYTHONPATH=case-studies/codex-h python3 -m unittest discover -s case-studies/codex-h/tests -p 'test_global_tei.py' -v
       - name: Download and audit every TEI body in official archive
         run: |
           python3 case-studies/codex-h/audit_combined_tei_global.py --download --output /tmp/codh01-global-tei.json
