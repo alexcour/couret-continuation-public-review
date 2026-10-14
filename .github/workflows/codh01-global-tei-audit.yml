@@ -1,0 +1,34 @@
+name: codh01-global-tei-audit
+on:
+  push:
+    paths:
+      - 'case-studies/codex-h/audit_combined_tei_global.py'
+      - 'case-studies/codex-h/tests/test_global_tei.py'
+      - '.github/workflows/codh01-global-tei-audit.yml'
+  pull_request:
+    paths:
+      - 'case-studies/codex-h/audit_combined_tei_global.py'
+      - 'case-studies/codex-h/tests/test_global_tei.py'
+      - '.github/workflows/codh01-global-tei-audit.yml'
+  workflow_dispatch:
+jobs:
+  global-inventory:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Unit-test multi-body and modern-reference separation
+        run: |
+          PYTHONPATH=case-studies/codex-h python3 -m unittest discover -s case-studies/codex-h/tests -p 'test_global_tei.py' -v
+      - name: Download and audit every TEI body in official archive
+        run: |
+          python3 case-studies/codex-h/audit_combined_tei_global.py --download --output /tmp/codh01-global-tei.json
+      - name: Upload full structural inventory (not manuscript images)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: codh01-global-tei-structure
+          path: /tmp/codh01-global-tei.json
+          retention-days: 30
