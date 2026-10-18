@@ -1,0 +1,26 @@
+{
+  "schema": "codh01-msi-intake-v1",
+  "dataset": {
+    "doi": "10.5525/gla.researchdata.1865",
+    "requested_folio": "86v",
+    "requested_surface": "Coislin 202, 11rT",
+    "supplier_crosswalk": "pending"
+  },
+  "authorization": {
+    "status": "pending",
+    "grantor": "non fourni",
+    "evidence_reference": "non fourni",
+    "allowed_operations": [],
+    "rights_review": {
+      "status": "pending",
+      "reviewer": "non fourni",
+      "record_reference": "non fourni"
+    },
+    "crosswalk_review": {
+      "status": "pending",
+      "reviewer": "non fourni",
+      "record_reference": "non fourni"
+    }
+  },
+  "assets": []
+}
