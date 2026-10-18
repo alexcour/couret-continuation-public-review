@@ -1,0 +1,33 @@
+name: codh01-msi-intake-metadata-only
+on:
+  push:
+    paths:
+      - 'case-studies/codex-h/msi_intake/**'
+      - '.github/workflows/codh01-msi-intake-gate.yml'
+  pull_request:
+    paths:
+      - 'case-studies/codex-h/msi_intake/**'
+      - '.github/workflows/codh01-msi-intake-gate.yml'
+jobs:
+  public-fixtures-only:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Negative tests only
+        env:
+          PYTHONPATH: case-studies/codex-h
+        run: python -m unittest discover -s case-studies/codex-h/msi_intake/tests -v
+      - name: Verify pending request stays blocked
+        env:
+          PYTHONPATH: case-studies/codex-h
+        run: |
+          set +e
+          python -m msi_intake.gate evaluate --manifest case-studies/codex-h/msi_intake/pending_request.example.json > /tmp/codh01-intake-report.json
+          rc=$?
+          set -e
+          test "$rc" -eq 2
+          python -c "import json; d=json.load(open('/tmp/codh01-intake-report.json')); assert d['gate']=='HOLD' and d['asset_count']==0"
