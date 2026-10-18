@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-13",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Patrologia_Graeca_Vol._085.pdf",
+  "commons_record": "https://commons.wikimedia.org/wiki/File:Patrologia_Graeca_Vol._085.pdf",
+  "source_sha256": "d6bb6e0362670d4c91834a7a2712f9aad8612df4624ea7488beb74969d0a2d42",
+  "physical_pdf_page": 394,
+  "printed_greek_column": "788B-C",
+  "printed_latin_column": "787B-C",
+  "record_status": "provisional image-based printed-edition collation; NOT six GA015 readings",
+  "records": [
+    {
+      "rubric_id": "K1",
+      "greek_printed_working_transcription": "Περὶ διδασκάλων ἐπιτηδείων πρὸς διακονίαν, καὶ ἔλεγχον ἀπειθῶν.",
+      "source_layer": "PG85_printed_edition",
+      "material_source": "Printed PG85, physical PDF page 394, Greek column 788B-C; Latin column 787B-C",
+      "witness": "printed edition; manuscript-by-manuscript identity of base readings not independently resolved",
+      "start_annotations_from_latin_column": [],
+      "complete_biblical_span": null,
+      "ga015_greek_diplomatic_verified": false,
+      "independent_philological_review_completed": false,
+      "transcription_warning": "Words and selected distinctions read on image; line-breaks joined, note numbers omitted; full typography/diacritics require independent review",
+      "notes": "Pinakes gives εἰς instead of printed πρὸς; no GA015 K1 acquired"
+    },
+    {
+      "rubric_id": "K2",
+      "greek_printed_working_transcription": "Κατὰ τῶν σαρκικὰς καθάρσεις πρεσβευόντων, καὶ ὑπὲρ πνευματικῆς ἀρετῆς.",
+      "source_layer": "PG85_printed_edition",
+      "material_source": "Printed PG85, physical PDF page 394, Greek column 788B-C; Latin column 787B-C",
+      "witness": "printed edition; manuscript-by-manuscript identity of base readings not independently resolved",
+      "start_annotations_from_latin_column": [
+        {
+          "source_designation": "main Latin annotation",
+          "modern_start": "Titus 1:10"
+        },
+        {
+          "source_designation": "Palat.",
+          "modern_start": "Titus 1:15"
+        }
+      ],
+      "complete_biblical_span": null,
+      "ga015_greek_diplomatic_verified": false,
+      "independent_philological_review_completed": false,
+      "transcription_warning": "Words and selected distinctions read on image; line-breaks joined, note numbers omitted; full typography/diacritics require independent review",
+      "notes": "Expanded πνευματικῆς in PG; GA015 keeps overlined abbreviation"
+    },
+    {
+      "rubric_id": "K3",
+      "greek_printed_working_transcription": "Παραινέσεις, ὡς δεῖ παραινεῖν καθ’ ἡλικίαν ἐκάστοις.",
+      "source_layer": "PG85_printed_edition",
+      "material_source": "Printed PG85, physical PDF page 394, Greek column 788B-C; Latin column 787B-C",
+      "witness": "printed edition; manuscript-by-manuscript identity of base readings not independently resolved",
+      "start_annotations_from_latin_column": [
+        {
+          "source_designation": "main Latin annotation",
+          "modern_start": "Titus 2:2"
+        }
+      ],
+      "complete_biblical_span": null,
+      "ga015_greek_diplomatic_verified": false,
+      "independent_philological_review_completed": false,
+      "transcription_warning": "Words and selected distinctions read on image; line-breaks joined, note numbers omitted; full typography/diacritics require independent review",
+      "notes": "PG ὡς contrasts with TEI ἂς; accents and apostrophe are provisional transcription presentation, not a diplomatic GA015 claim"
+    },
+    {
+      "rubric_id": "K4",
+      "greek_printed_working_transcription": "Περὶ δούλων, ὡς ἂν καὶ αὐτοὶ τῆς Χριστοῦ χάριτος ἀξίως δουλεύοιεν.",
+      "source_layer": "PG85_printed_edition",
+      "material_source": "Printed PG85, physical PDF page 394, Greek column 788B-C; Latin column 787B-C",
+      "witness": "printed edition; manuscript-by-manuscript identity of base readings not independently resolved",
+      "start_annotations_from_latin_column": [
+        {
+          "source_designation": "main Latin annotation",
+          "modern_start": "Titus 2:9"
+        }
+      ],
+      "complete_biblical_span": null,
+      "ga015_greek_diplomatic_verified": false,
+      "independent_philological_review_completed": false,
+      "transcription_warning": "Words and selected distinctions read on image; line-breaks joined, note numbers omitted; full typography/diacritics require independent review",
+      "notes": "Note 31 reports δουλεύσειεν in Regio-Alexandrinus and Vatican manuscript no. 363; modern shelfmarks not resolved here"
+    },
+    {
+      "rubric_id": "K5",
+      "greek_printed_working_transcription": "Περὶ ἀρχόντων ὑπακοῆς πρεπούσης τῇ ἐπιεικείᾳ τοῦ Χριστοῦ.",
+      "source_layer": "PG85_printed_edition",
+      "material_source": "Printed PG85, physical PDF page 394, Greek column 788B-C; Latin column 787B-C",
+      "witness": "printed edition; manuscript-by-manuscript identity of base readings not independently resolved",
+      "start_annotations_from_latin_column": [
+        {
+          "source_designation": "main Latin annotation",
+          "modern_start": "Titus 2:15"
+        },
+        {
+          "source_designation": "Cryp.",
+          "modern_start": "Titus 3:1"
+        }
+      ],
+      "complete_biblical_span": null,
+      "ga015_greek_diplomatic_verified": false,
+      "independent_philological_review_completed": false,
+      "transcription_warning": "Words and selected distinctions read on image; line-breaks joined, note numbers omitted; full typography/diacritics require independent review",
+      "notes": "PG τοῦ contrasts with GA015 TEI τῶν; normal expanded form must not overwrite manuscript abbreviation/spelling"
+    },
+    {
+      "rubric_id": "K6",
+      "greek_printed_working_transcription": "Παραίνεσις περὶ τοῦ ἐκκλίνειν τοὺς ἐριστικοὺς ζητητάς.",
+      "source_layer": "PG85_printed_edition",
+      "material_source": "Printed PG85, physical PDF page 394, Greek column 788B-C; Latin column 787B-C",
+      "witness": "printed edition; manuscript-by-manuscript identity of base readings not independently resolved",
+      "start_annotations_from_latin_column": [
+        {
+          "source_designation": "Cryptoferratensis",
+          "modern_start": "Titus 3:10"
+        },
+        {
+          "source_designation": "Palatinus",
+          "modern_start": "Titus 3:9"
+        }
+      ],
+      "complete_biblical_span": null,
+      "ga015_greek_diplomatic_verified": false,
+      "independent_philological_review_completed": false,
+      "transcription_warning": "Words and selected distinctions read on image; line-breaks joined, note numbers omitted; full typography/diacritics require independent review",
+      "notes": "Note 32 reports αἱρετικούς/αἱρετικοὺς in Palatinus, Urbinas, Stephaniana and Oecumenius; do not equate those designations with BL witnesses"
+    }
+  ]
+}

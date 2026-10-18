@@ -1,0 +1,254 @@
+{
+  "snapshot_date": "2026-10-13",
+  "scope": "All Titus-labelled transcriptions in the acquired index; not the complete historical letter.",
+  "reference_warning": "Modern reference labels may cover only part of a verse and contain editorial restorations.",
+  "pages": [
+    {
+      "folio": "87r",
+      "library_folio": "Paris, BnF, Coislin 202, 11r",
+      "biblical_content_metadata": "Titus Chapter List",
+      "reference_labels": [],
+      "chapnum_count": 5,
+      "unclear_nodes": 6,
+      "supplied_nodes_by_source": {
+        "Omont": 2
+      },
+      "expansion_nodes": 1,
+      "source_path": "sources/GA015_87r.xml",
+      "sha256": "632a81f770c9f6d47ecf2d1614ddbfbc17620c965cd3b921004b19508c1cea2f"
+    },
+    {
+      "folio": "87v",
+      "library_folio": "Paris, BnF, Coislin 202, 11v",
+      "biblical_content_metadata": "Titus 1:1-3",
+      "reference_labels": [
+        "Titus 1:1",
+        "Titus 1:2",
+        "Titus 1:3"
+      ],
+      "chapnum_count": 0,
+      "unclear_nodes": 6,
+      "supplied_nodes_by_source": {},
+      "expansion_nodes": 1,
+      "source_path": "sources/GA015_87v.xml",
+      "sha256": "fda51dd159cb1b809c8cfd31c8b1f13fa183024a31125923b88792e7557b2379"
+    },
+    {
+      "folio": "88r",
+      "library_folio": "Paris, BnF, Coislin 202, 11vT",
+      "biblical_content_metadata": "Titus 1:3-6",
+      "reference_labels": [
+        "Titus 1:3",
+        "Titus 1:4",
+        "Titus 1:5",
+        "Titus 1:6"
+      ],
+      "chapnum_count": 0,
+      "unclear_nodes": 28,
+      "supplied_nodes_by_source": {
+        "na28": 22
+      },
+      "expansion_nodes": 0,
+      "source_path": "sources/GA015_88r.xml",
+      "sha256": "0ce92292a04b6da8ec4d258c153b796dbdca44b8c7e057950989d5a34123eb87"
+    },
+    {
+      "folio": "89v",
+      "library_folio": "Paris, BnF, Coislin 202, 12rT",
+      "biblical_content_metadata": "Titus 1:12-15",
+      "reference_labels": [
+        "Titus 1:12",
+        "Titus 1:13",
+        "Titus 1:14",
+        "Titus 1:15"
+      ],
+      "chapnum_count": 0,
+      "unclear_nodes": 12,
+      "supplied_nodes_by_source": {
+        "na28": 22
+      },
+      "expansion_nodes": 0,
+      "source_path": "sources/GA015_89v.xml",
+      "sha256": "2fd65bc5ac5dc4f52a226ae37e5b7fc77384ff616b4a1adfddb2b46f8b401912"
+    },
+    {
+      "folio": "90r",
+      "library_folio": "Paris, BnF, Coislin 202, 12r",
+      "biblical_content_metadata": "Titus 1:15-2:2",
+      "reference_labels": [
+        "Titus 1:15",
+        "Titus 1:16",
+        "Titus 2:1",
+        "Titus 2:2"
+      ],
+      "chapnum_count": 1,
+      "unclear_nodes": 16,
+      "supplied_nodes_by_source": {
+        "na28": 3
+      },
+      "expansion_nodes": 1,
+      "source_path": "sources/GA015_90r.xml",
+      "sha256": "d804fd3351ab1f17fc3d252794172c62fb2def422a6c55b97a89439c1037b74f"
+    },
+    {
+      "folio": "90v",
+      "library_folio": "Paris, BnF, Coislin 202, 12v",
+      "biblical_content_metadata": "Titus 2:2-5",
+      "reference_labels": [
+        "Titus 2:2",
+        "Titus 2:3",
+        "Titus 2:4",
+        "Titus 2:5"
+      ],
+      "chapnum_count": 0,
+      "unclear_nodes": 14,
+      "supplied_nodes_by_source": {
+        "na28": 4
+      },
+      "expansion_nodes": 0,
+      "source_path": "sources/GA015_90v.xml",
+      "sha256": "1221f286116276060e621f7ce82c830f071fb98b98b1141b1d40321e7009333f"
+    },
+    {
+      "folio": "91r",
+      "library_folio": "Paris, BnF, Coislin 202, 12vT",
+      "biblical_content_metadata": "Titus 2:5-8",
+      "reference_labels": [
+        "Titus 2:5",
+        "Titus 2:6",
+        "Titus 2:7",
+        "Titus 2:8"
+      ],
+      "chapnum_count": 0,
+      "unclear_nodes": 14,
+      "supplied_nodes_by_source": {
+        "na28": 6
+      },
+      "expansion_nodes": 0,
+      "source_path": "sources/GA015_91r.xml",
+      "sha256": "b40909abc61a56b3220723320959477ddc2baf7121885095ce659541f1f139b6"
+    },
+    {
+      "folio": "92v",
+      "library_folio": "Paris, BnF, Coislin 202, 13rT",
+      "biblical_content_metadata": "Titus 3:9-12",
+      "reference_labels": [
+        "Titus 3:10",
+        "Titus 3:11",
+        "Titus 3:12",
+        "Titus 3:9"
+      ],
+      "chapnum_count": 0,
+      "unclear_nodes": 16,
+      "supplied_nodes_by_source": {
+        "na28": 21
+      },
+      "expansion_nodes": 0,
+      "source_path": "sources/GA015_92v.xml",
+      "sha256": "47b80c81b7666b33c06a5fde46f6f31d845b4b727dbb8eb9296188a6906b1488"
+    },
+    {
+      "folio": "93r",
+      "library_folio": "Paris, BnF, Coislin 202, 13r",
+      "biblical_content_metadata": "Titus 3:13-15",
+      "reference_labels": [
+        "Titus 3:13",
+        "Titus 3:14",
+        "Titus 3:15"
+      ],
+      "chapnum_count": 0,
+      "unclear_nodes": 9,
+      "supplied_nodes_by_source": {
+        "Omont": 3,
+        "na28": 2
+      },
+      "expansion_nodes": 1,
+      "source_path": "sources/GA015_93r.xml",
+      "sha256": "8d07491ec78f9a4975a6a7841163fe34397e164f3468b449ac2c58d7b49c25e1"
+    },
+    {
+      "folio": "93v",
+      "library_folio": "Paris, BnF, Coislin 202, 13v",
+      "biblical_content_metadata": "Titus subscription",
+      "reference_labels": [],
+      "chapnum_count": 0,
+      "unclear_nodes": 5,
+      "supplied_nodes_by_source": {},
+      "expansion_nodes": 4,
+      "source_path": "sources/GA015_93v.xml",
+      "sha256": "31e23efca006a7e232ca8069dda337c104faf5629b186e046c40baaddf5537d8"
+    }
+  ],
+  "markers": [
+    {
+      "folio": "87r",
+      "value": "β",
+      "encoded_number": "2",
+      "context": "list",
+      "within_ab_raw": null,
+      "within_modern_verse": null,
+      "whole_span_certified": false
+    },
+    {
+      "folio": "87r",
+      "value": "γ",
+      "encoded_number": "3",
+      "context": "list",
+      "within_ab_raw": null,
+      "within_modern_verse": null,
+      "whole_span_certified": false
+    },
+    {
+      "folio": "87r",
+      "value": "δ",
+      "encoded_number": "4",
+      "context": "list",
+      "within_ab_raw": null,
+      "within_modern_verse": null,
+      "whole_span_certified": false
+    },
+    {
+      "folio": "87r",
+      "value": "ε",
+      "encoded_number": "5",
+      "context": "list",
+      "within_ab_raw": null,
+      "within_modern_verse": null,
+      "whole_span_certified": false
+    },
+    {
+      "folio": "87r",
+      "value": "ϛ",
+      "encoded_number": "6",
+      "context": "list",
+      "within_ab_raw": null,
+      "within_modern_verse": null,
+      "whole_span_certified": false
+    },
+    {
+      "folio": "90r",
+      "value": "γ",
+      "encoded_number": "3",
+      "context": "body",
+      "within_ab_raw": "Titus.2.1",
+      "within_modern_verse": "Titus 2:1",
+      "whole_span_certified": false,
+      "next_ab_raw": "Titus.2.2",
+      "next_modern_verse": "Titus 2:2",
+      "preceding_word_nodes": [
+        "πρέπει",
+        "τῆ",
+        "ὑγιαινούση",
+        "διδασκαλία"
+      ]
+    }
+  ],
+  "summary": {
+    "indexed_transcriptions": 10,
+    "list_markers": 5,
+    "body_markers": 1,
+    "distinct_modern_reference_labels": 26,
+    "whole_rubric_spans_certified": 0,
+    "independent_philological_validation_completed": false
+  }
+}
