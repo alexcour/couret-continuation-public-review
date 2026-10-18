@@ -14,7 +14,7 @@
     python -m msi_lab.bench generate --scenario artifact --out /tmp/msi-artifact
     python -m msi_lab.bench analyze --input /tmp/msi-artifact --out /tmp/msi-artifact-report
 
-Use fresh paths, or remove your own old temporary outputs first. Ten adversarial tests passed locally on 18 October. Reports contain hashes, software versions, orientation and alignment, PCA explained fractions, and synthetic holdout contrast. Output images: false_color.png and pc1.png. UTC log timestamp varies; fixed seeded fixture contents are reproducible.
+Use fresh paths, or remove your own old temporary outputs first. The original ten adversarial tests passed locally on 18 October. Four additional tests now cover a held-out PCA band, a coherent multiband stain, seeded reproducibility and excessive registration displacement; their remote status must be checked at the new head. Reports contain hashes, software versions, orientation and alignment, PCA explained fractions, and synthetic holdout contrast. Output images: false_color.png and pc1.png. UTC log timestamp varies; fixed seeded fixture contents are reproducible.
 
 ## What the tests DO and DO NOT show
 
@@ -22,7 +22,7 @@ Use fresh paths, or remove your own old temporary outputs first. Ten adversarial
 - SHA-256 verification rejects tampering; strict manifest requires source, rights, per-band details, and rejects path traversal and real-origin labels.
 - Orientation enumerates 8 rotate/mirror candidates; translation alignment searches integer shifts up to five pixels using pre-planted artificial fiducials OUTSIDE the content ROI; fails closed on weak scores.
 - Unsupervised centered PCA and percentile RGB composites are pictures, not evidence of letters.
-- Negative fixtures test blank regions, a one-band false positive, held-out last-band rejection, missing metadata, no fiducials, and no overwrites.
+- Negative fixtures test blank regions, a one-band false positive, a shared multiband stain, held-out last-band rejection, missing metadata, no fiducials, and no overwrites.
 - Limitations: NO dark/flat correction, physical radiometric calibration, 16-bit TIFF/RAW parser, lens distortion, nonrigid registration, measured uncertainty, or paleographic verification. Pre-set fixture target and thresholds MUST NEVER be used as real manuscript evidence.
 
 ## Strict approval and real-image gate (NOT YET IMPLEMENTED)
@@ -34,3 +34,7 @@ Use fresh paths, or remove your own old temporary outputs first. Ten adversarial
 5. Require TWO independent blind readers and explicit alternative transcriptions with coordinates, orientation, source bands and disagreements. Only then seek external review from Allen, without claiming K1 is reconstructed.
 
 **No automatic merge.** No synthetic output is a manuscript transcription. No OCR, generative character completion or Greek phrase prompting in this software.
+
+## v0.2 review gate — 18 October 2026
+
+The fourth band is kept entirely outside PCA fitting and retained for separate known-fixture contrast checks; this is a **software holdout**, not physical independence. Reports now say `band_support_at_fixture_threshold` instead of implying statistically independent observations. A deliberately shared multiband stain generates four-band support but remains `NOT_RECONSTRUCTED`, demonstrating that even spatial and spectral coherence cannot authenticate characters. Radiometric response, genuine exposure independence and historical ink attribution require the restricted originals, calibration metadata and approval from data holders. The previous wording suggesting independent bands was withdrawn. The new tests should not be considered successful until the latest GitHub CI completes.
