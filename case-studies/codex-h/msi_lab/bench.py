@@ -91,7 +91,7 @@ def align_translation(a, max_shift=5):
 
 def generate(out_dir: Path, seed=20261018, scenario='signal'):
     """Invent non-letter patterns + separate holdout bands; no text is encoded."""
-    if scenario not in ('signal','blank','artifact'):
+    if scenario not in ('signal','blank','artifact','shared_stain'):
         raise ValueError('unknown scenario')
     out_dir.mkdir(parents=True, exist_ok=True)
     if any(out_dir.iterdir()):
@@ -113,6 +113,8 @@ def generate(out_dir: Path, seed=20261018, scenario='signal'):
             a -= (0.12 + 0.035*i)*target
         if scenario == 'artifact' and i == 0:
             a -= 0.24*target  # Single-band trap, NOT repeatable.
+        if scenario == 'shared_stain':
+            a -= 0.16*target  # Multiband-coherent nuisance: NOT a glyph or ink attribution.
         if i == 1:
             a[85:91,86:92] -= 0.12  # Off-target nuisance / blank-control trap.
         a = np.roll(a,shifts[i],axis=(0,1))
@@ -205,13 +207,16 @@ def analyze(input_dir:Path,out_dir:Path):
         aligned.append(fixed)
         transforms.append({'orientation':ori,'registration':shift})
     cube=np.stack(aligned,axis=-1)
-    scores,frac,loadings=pca_cube(cube)
+    # Hold back the last band from PCA fitting when 4+ bands are provided.
+    held_out_index=(len(bands)-1) if len(bands)>=4 else None
+    fit_cube=cube[:,:,:-1] if held_out_index is not None else cube
+    scores,frac,loadings=pca_cube(fit_cube)
     rgb=np.stack([stretch(cube[:,:,i]) for i in range(3)],axis=-1)
     Image.fromarray(np.uint8(np.round(rgb*255)),'RGB').save(out_dir/'false_color.png')
     Image.fromarray(np.uint8(np.round(stretch(scores[:,:,0])*255)),'L').save(out_dir/'pc1.png')
     # Explicit synthetic-known ROI benchmark ONLY. Do not project it to real manuscript pixels.
     contrasts=[float(np.mean(b[TARGET])-np.mean(b[CONTROL])) for b in aligned]
-    independent_support=sum(c < -0.045 for c in contrasts)
+    band_support=sum(c < -0.045 for c in contrasts)
     report={'schema':SCHEMA,'mode':'SYNTHETIC_VALIDATION_NOT_PHILOLOGY',
             'source_manifest_sha256':sha256_file(input_dir/'manifest.json'),
             'source_band_sha256':[b['sha256'] for b in manifest['bands']],
@@ -219,8 +224,11 @@ def analyze(input_dir:Path,out_dir:Path):
             'transforms':transforms,'pca_explained_fraction':[float(x) for x in frac],
             'pca_loadings':loadings.tolist(),
             'synthetic_target_minus_control':contrasts,
-            'independent_band_support_at_fixture_threshold':independent_support,
-            'holdout_last_band_contrast':contrasts[-1],
+            'band_support_at_fixture_threshold':band_support,
+            'holdout_index':held_out_index,
+            'pca_fit_band_count':fit_cube.shape[-1],
+            'holdout_last_band_contrast':contrasts[-1] if held_out_index is not None else None,
+            'interpretation_boundary':'Multiband coherence can also indicate stains, bleed-through, or structured substrate; no character certified',
             'reading_k1':'NOT_RECONSTRUCTED','g0_gate':'PARTIAL',
             'notice':'ROI, threshold and truth only valid for invented synthetic geometry; no glyph detection',
             'python':sys.version.split()[0], 'numpy':np.__version__,
@@ -235,7 +243,7 @@ def main(argv=None):
     sub=ap.add_subparsers(dest='command',required=True)
     g=sub.add_parser('generate');g.add_argument('--out',type=Path,required=True)
     g.add_argument('--seed',type=int,default=20261018)
-    g.add_argument('--scenario',choices=('signal','blank','artifact'),default='signal')
+    g.add_argument('--scenario',choices=('signal','blank','artifact','shared_stain'),default='signal')
     a=sub.add_parser('analyze');a.add_argument('--input',type=Path,required=True)
     a.add_argument('--out',type=Path,required=True)
     args=ap.parse_args(argv)
@@ -244,7 +252,7 @@ def main(argv=None):
         print('SYNTHETIC GENERATED',len(x['bands']),'bands')
     else:
         x=analyze(args.input,args.out)
-        print('SYNTHETIC ANALYSIS',json.dumps({'support':x['independent_band_support_at_fixture_threshold'],
+        print('SYNTHETIC ANALYSIS',json.dumps({'support':x['band_support_at_fixture_threshold'],
                     'holdout':x['holdout_last_band_contrast'],'pca':x['pca_explained_fraction']}))
 
 if __name__=='__main__':
