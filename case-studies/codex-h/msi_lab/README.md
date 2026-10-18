@@ -38,3 +38,14 @@ Use fresh paths, or remove your own old temporary outputs first. The original te
 ## v0.2 review gate — 18 October 2026
 
 The fourth band is kept entirely outside PCA fitting and retained for separate known-fixture contrast checks; this is a **software holdout**, not physical independence. Reports now say `band_support_at_fixture_threshold` instead of implying statistically independent observations. A deliberately shared multiband stain generates four-band support but remains `NOT_RECONSTRUCTED`, demonstrating that even spatial and spectral coherence cannot authenticate characters. Radiometric response, genuine exposure independence and historical ink attribution require the restricted originals, calibration metadata and approval from data holders. The previous wording suggesting independent bands was withdrawn. The new tests should not be considered successful until the latest GitHub CI completes.
+
+## v0.3 adversarial robustness laboratory — 18 October 2026
+
+A separate `robustness.py` module and `tests/test_robustness.py` add 17 **synthetic-only** tests. Reproduce from the repository root after installing the existing MSI requirements and setting `PYTHONPATH=case-studies/codex-h`:
+
+    python -m unittest discover -s case-studies/codex-h/msi_lab/tests -v
+    python -m msi_lab.robustness > synthetic_robustness_report.json
+
+The tests cover exact synthetic dark/flat recovery, absent/invalid calibration rejection, masked saturation, reproducible correlated noise, random illumination perturbations, PCA first-eigenvector alignment using the absolute cosine (resolving sign ambiguity), integer and fractional shift limitations, and multiband stains, camera stripes and illumination shadows. All five scenarios retain explicit synthetic provenance and `k1_reading: NOT_RECONSTRUCTED`.
+
+**Epistemic distinction:** three different non-writing phenomena are deliberately detected across all four bands by a naïve contrast detector. Therefore four-band agreement is demonstrably *not sufficient* for a historical character. PC1 stability is likewise only a software robustness diagnostic. This module does not calibrate real data or assert spectral independence, ink identity, date, reading, or lawful access. Geometry thresholds are fixture-specific and pre-chosen. Dark/flat correction returns NaN for isolated saturation rather than inventing pixel values; downstream functions must explicitly handle missing data, and no real-image adapter exists. No restricted pixels are stored, rendered or exported.
