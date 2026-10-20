@@ -1,6 +1,6 @@
 # CONT 02 Extrait mathématique général pour relecture
 
-Version éditoriale du 6 octobre 2026. Les sections sont conservées avec leur numérotation de source. Les exemples et raccords FCI, ainsi que les liens internes, ont été retirés. Ces extraits chronologiques doivent être lus avec le statut actuel du README.
+Version éditoriale du 6 octobre 2026. Les sections sont conservées avec leur numérotation de source. Seul le périmètre mathématique général est inclus ; les exemples privés et les liens internes sont exclus. Ces extraits chronologiques doivent être lus avec le statut actuel du README.
 
 0. Statut
 Objet : donner un cadre minimal rigoureux à l’équivalence de continuation, à la distance d_Q, à la perte par quotient L_Q(Φ) et à la provenance minimale Ω_Q. Les résultats T1 et T2 ci-dessous sont des conséquences directes des propriétés d’une métrique sur les lois de probabilité et de la factorisation par fibres. Ils constituent un socle formel du programme, mais ne sont pas revendiqués comme nouveaux dans la littérature.
