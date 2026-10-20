@@ -1,6 +1,6 @@
 # CONT 05 Extrait mathématique général pour relecture
 
-Version éditoriale du 6 octobre 2026. Les sections sont conservées avec leur numérotation de source. Les exemples et raccords FCI, ainsi que les liens internes, ont été retirés. Ces extraits chronologiques doivent être lus avec le statut actuel du README.
+Version éditoriale du 6 octobre 2026. Les sections sont conservées avec leur numérotation de source. Seul le périmètre mathématique général est inclus ; les exemples privés et les liens internes sont exclus. Ces extraits chronologiques doivent être lus avec le statut actuel du README.
 
 0. Statut et question directrice
 Objet : relier le programme Continuation–Provenance aux travaux sur curiosité artificielle, learning progress, agents autotéliques, information gain et active learning, sans confondre ces littératures ni revendiquer comme nouveau le principe général d’exploration informative.
