@@ -1,11 +1,5 @@
 # Continuation and representation Working public review
 
-<!-- research-vision-20261016 -->
-> **Research programme and ambitions · 16 October 2026**  
-> [Présentation en français](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_FR.md) · [Research vision in English](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_EN.md)  
-> Our research dream is to turn a result into reasoning that can be recovered, tested and passed on. Memory and continuation connect the controlled demonstrations to the wider research questions. The presentation distinguishes existing work, proposed experiments and research dreams. This repository retains its own claim and review boundaries.
-<!-- /research-vision-20261016 -->
-
 Review package 0.1.0-review, prepared 2026-10-06 by Alexandre Couret.
 This source is publicly available for review at
 https://github.com/alexcour/couret-continuation-public-review.
@@ -62,3 +56,7 @@ Methods from the literature and third-party materials retain their authorship
 and rights. No third-party paper PDFs or proprietary software are redistributed.
 AI assistance is part of the working method; the author is responsible for claims.
 No DOI, stable-release designation or external validation is implied.
+
+## Programme context
+
+[Présentation du programme en français](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_FR.md) · [Programme overview in English](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_EN.md). The scope, review status and version of this repository are specified above.
