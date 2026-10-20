@@ -3,16 +3,18 @@
 <!-- research-vision-20261016 -->
 > **Research programme and ambitions · 16 October 2026**  
 > [Présentation en français](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_FR.md) · [Research vision in English](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_EN.md)  
-> Our research dream is to turn a result into reasoning that can be recovered, tested and passed on. Memory and continuation connect the controlled demonstrations to the wider research questions. The presentation distinguishes existing work, proposed experiments and research dreams. This repository retains its own claim and review boundaries.
+> The aim of this programme is to make results recoverable, testable and transferable. Memory and continuation connect the controlled demonstrations to the wider research questions. The presentation distinguishes existing work, proposed experiments and research dreams. This repository retains its own claim and review boundaries.
 <!-- /research-vision-20261016 -->
+
+> **Authorship clarification · 20 October 2026.** Alexandre Couret is the author responsible for this programme. First-person plural wording in the linked research vision refers to his workflow with AI assistants; it does not designate a team of human coauthors or an independent validation. AI systems are assistance tools, not authors.
 
 Review package 0.1.0-review, prepared 2026-10-06 by Alexandre Couret.
 This source is publicly available for review at
 https://github.com/alexcour/couret-continuation-public-review.
 
 This repository joins general CONT notes, a controlled HTTP permissions diagnostic,
-and finite prime-continuation experiments. The industrial FCI authority model,
-its traces, permit rules, event alphabet and patent material are absent.
+and finite prime-continuation experiments. Its public scope is defined in
+[PUBLIC_SCOPE.md](PUBLIC_SCOPE.md).
 
 ## General notes
 

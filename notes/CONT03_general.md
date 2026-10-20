@@ -1,6 +1,6 @@
 # CONT 03 Extrait mathématique général pour relecture
 
-Version éditoriale du 6 octobre 2026. Les sections sont conservées avec leur numérotation de source. Les exemples et raccords FCI, ainsi que les liens internes, ont été retirés. Ces extraits chronologiques doivent être lus avec le statut actuel du README.
+Version éditoriale du 6 octobre 2026. Les sections sont conservées avec leur numérotation de source. Seul le périmètre mathématique général est inclus ; les exemples privés et les liens internes sont exclus. Ces extraits chronologiques doivent être lus avec le statut actuel du README.
 
 0. Statut et résultat directeur
 Objet : déterminer quand le quotient de continuation Ω_Q défini dans CONT-01/CONT-02 est une véritable mémoire opérationnelle, c’est-à-dire quand son état suivant peut être calculé depuis son état courant et la nouvelle interaction, sans relire l’histoire complète.

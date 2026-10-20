@@ -1,6 +1,6 @@
 # CONT 04 Extrait mathématique général pour relecture
 
-Version éditoriale du 6 octobre 2026. Les sections sont conservées avec leur numérotation de source. Les exemples et raccords FCI, ainsi que les liens internes, ont été retirés. Ces extraits chronologiques doivent être lus avec le statut actuel du README.
+Version éditoriale du 6 octobre 2026. Les sections sont conservées avec leur numérotation de source. Seul le périmètre mathématique général est inclus ; les exemples privés et les liens internes sont exclus. Ces extraits chronologiques doivent être lus avec le statut actuel du README.
 
 0. Statut et objectif
 Objet : transformer l’intuition « A puis B n’est pas nécessairement B puis A » en un outil mathématique précis pour le programme Continuation–Provenance. Le but n’est pas de présenter la non-commutativité comme nouvelle, mais de distinguer la non-commutativité brute d’un système de la non-commutativité qui reste pertinente pour les continuations définies par Q.

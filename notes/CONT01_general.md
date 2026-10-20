@@ -1,6 +1,6 @@
 # CONT 01 Extrait mathématique général pour relecture
 
-Version éditoriale du 6 octobre 2026. Les sections sont conservées avec leur numérotation de source. Les exemples et raccords FCI, ainsi que les liens internes, ont été retirés. Ces extraits chronologiques doivent être lus avec le statut actuel du README.
+Version éditoriale du 6 octobre 2026. Les sections sont conservées avec leur numérotation de source. Seul le périmètre mathématique général est inclus ; les exemples privés et les liens internes sont exclus. Ces extraits chronologiques doivent être lus avec le statut actuel du README.
 
 1. Question directrice
 Pour une histoire h, une famille d’interventions admissibles U, une famille d’observables futurs Y et un horizon T, on regroupe les continuations pertinentes dans une spécification Q=(U,Y,T). Deux histoires sont équivalentes relativement à Q lorsqu’aucune intervention admissible ne permet de distinguer leurs lois de continuation.
