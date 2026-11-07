@@ -64,3 +64,7 @@ Methods from the literature and third-party materials retain their authorship
 and rights. No third-party paper PDFs or proprietary software are redistributed.
 AI assistance is part of the working method; the author is responsible for claims.
 No DOI, stable-release designation or external validation is implied.
+
+## Consignes pour les agents
+
+Les interventions assistées suivent les [consignes du dépôt](AGENTS.md).
